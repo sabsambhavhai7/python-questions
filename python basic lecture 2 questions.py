@@ -84,4 +84,13 @@ elif marks >= 60 and marks < 70:
     print("Grade D")
 else:    print("Grade F") 
 
+# nesting
+if age >= 18:
+    if age >= 60:
+       if age >= 80:
+           print("You cannot drive")
+       else:
+              print("You can drive but be careful")
+              else:
+              print("You cannot drive")
 
