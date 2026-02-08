@@ -94,3 +94,10 @@ if age >= 18:
               else:
               print("You cannot drive")
 
+# question - 5
+input_number = int(input("Enter a number: "))
+if input_number % 2 == 0:
+    print("The number is even")
+else:
+    print("The number is odd")
+
