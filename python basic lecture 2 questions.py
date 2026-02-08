@@ -113,3 +113,12 @@ elif B >= A and B >= C:
 else:
     print("C is the greatest number")
 
+
+
+   # lists and turbles
+marks = [90.4, 80.5, 70.9, 60.1, 50.2]
+print(type(marks[0])) # 90.4
+print(type(marks[1])) # 80.5
+print(type(marks[2])) # 70.9  
+print(type(marks[3])) # 60.1
+print(type(marks[4])) # 50.2
