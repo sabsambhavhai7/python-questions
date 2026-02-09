@@ -134,3 +134,10 @@ print(marks[2:5]) # [70.9, 60.1, 50.2]
 list1 = [1, 2, 3, 4, 5]
 list.append(6)
 print(list1) # [1, 2, 3, 4, 5, 6]
+
+list1 = [1, 2, 3, 4, 5]
+list1.sort()
+print(list1) # [1, 2, 3, 4, 5]
+list1.reverse()
+print(list1) # [5, 4, 3, 2, 1]
+
