@@ -189,4 +189,15 @@ print(info)
 info["name"] ="sambhav"
 print(info)
 
-
+# NESTED DICTIONARIES
+students = {
+    "NAME": "John",
+    "NAMES": ["AXEL", "MARIO", "LUIS"],
+    "SUBJECTS": {
+        "MATHS": 90,
+        "ENGLISH": 85,
+        "SCIENCE": 92
+    },
+    "AGES": [20, 21, 23, 34]
+}
+print(students)
