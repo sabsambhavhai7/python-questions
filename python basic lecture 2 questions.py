@@ -161,3 +161,13 @@ movies.append(movie1)
 movies.append(movie2)
 movies.append(movie3)
 print(movies)
+
+
+# question - 2
+palindrome =['r','a','d','a','r']
+palindrome_copy = palindrome.copy()
+palindrome_copy.reverse()
+if palindrome == palindrome_copy:
+    print("The list is a palindrome.")
+else:
+    print("The list is not a palindrome.")
