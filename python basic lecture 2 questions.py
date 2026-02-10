@@ -215,3 +215,8 @@ print(students.items())
 print(students.get("NAME")) 
 print(students.update({"NAME": "AXEL"}))
 
+# SET
+collections = (1,2,3,4)
+print(collections)
+print(type(collections))
+
