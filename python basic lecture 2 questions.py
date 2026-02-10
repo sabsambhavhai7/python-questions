@@ -148,3 +148,16 @@ list1.remove(3)
 print(list1)
 list1.pop(4)
 print(list1)
+
+
+
+# question - 1    
+
+movies =[]
+movie1 = input("Enter the name of movie 1: ")
+movie2 = input("Enter the name of movie 2: ")
+movie3 = input("Enter the name of movie 3: ")
+movies.append(movie1)
+movies.append(movie2)
+movies.append(movie3)
+print(movies)
