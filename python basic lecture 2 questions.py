@@ -171,3 +171,11 @@ if palindrome == palindrome_copy:
     print("The list is a palindrome.")
 else:
     print("The list is not a palindrome.")
+
+# QUSTION 3
+
+grade = ("C", "D", "A", "A", "B", "B", "A")
+print(grade.count("A"))
+print(sorted(grade))
+
+
