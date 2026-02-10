@@ -178,5 +178,15 @@ grade = ("C", "D", "A", "A", "B", "B", "A")
 print(grade.count("A"))
 print(sorted(grade))
 
+#dictionarys
+
+info = {
+    "key1": "value1",
+    "name": "John",
+    "Learning": "python" ,    
+}
+print(info)
+info["name"] ="sambhav"
+print(info)
 
 
