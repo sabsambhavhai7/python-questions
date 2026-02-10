@@ -201,3 +201,17 @@ students = {
     "AGES": [20, 21, 23, 34]
 }
 print(students)
+
+# directory methods
+
+students.keys()
+students.values()
+students.items() 
+students.get("NAME")
+students.update({"NAME": "AXEL"})
+print(students.keys())
+print(students.values())
+print(students.items())             
+print(students.get("NAME")) 
+print(students.update({"NAME": "AXEL"}))
+
