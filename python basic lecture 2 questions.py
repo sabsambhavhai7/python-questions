@@ -222,3 +222,8 @@ print(type(collections))
 collections = (1,2,3,4)
 print(collections)
 print(type(collections))
+
+collections = (1,2,3,4)
+collections.__add__((5,6,7,8))
+print(collections.__add__((5,6,7,8)))
+print(collections.pop())
