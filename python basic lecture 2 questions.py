@@ -244,3 +244,18 @@ subjects.add(input("Enter the first subject: "))
 subjects.add(input("Enter the second subject: "))         
 subjects.add(input("Enter the third subject: "))
 print(subjects)
+
+
+# question4
+marks = {}
+
+x=int(input("input phy marks: "))
+marks.update({"phy": x})
+
+y=int(input("input chem marks: "))
+marks.update({"chem": y})               
+
+z=int(input("input math marks: "))
+marks.update({"math": z})
+
+print(marks)
