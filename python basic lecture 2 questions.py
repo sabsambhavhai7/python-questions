@@ -237,4 +237,10 @@ print(set1.intersection(set2))
 
 set1 ={"python", "java", "c++", "javascript", "python","python", "java", "c++", "c"}
 print(len(set1))
- 
+
+#  questoin3
+subjects = set()
+subjects.add(input("Enter the first subject: "))
+subjects.add(input("Enter the second subject: "))         
+subjects.add(input("Enter the third subject: "))
+print(subjects)
