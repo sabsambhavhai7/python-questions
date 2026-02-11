@@ -233,3 +233,8 @@ set2= {5,6,7,8}
 print(set1.union(set2)) 
 print(set1.intersection(set2))
 
+# question2
+
+set1 ={"python", "java", "c++", "javascript", "python","python", "java", "c++", "c"}
+print(len(set1))
+ 
