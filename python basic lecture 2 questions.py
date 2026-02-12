@@ -272,4 +272,8 @@ i=1
 while i <= 100000:
         print("Sambhav Shukla",i)
         i += 2
-  
+
+a=1
+while a <= 100:
+    print(a)
+    a += 1
