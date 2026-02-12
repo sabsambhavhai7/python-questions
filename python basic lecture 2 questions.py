@@ -259,3 +259,9 @@ z=int(input("input math marks: "))
 marks.update({"math": z})
 
 print(marks)
+
+# lecture5   loopss
+counter = 0
+while counter < 5:
+    print("This is an infinite loop")
+    counter += 1     
