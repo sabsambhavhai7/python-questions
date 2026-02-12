@@ -305,3 +305,11 @@ while i < len(numbser):
         break
     i += 1 
 
+
+i=0
+while i < 5:
+    if i == 3:
+      continue
+    print(i)
+    i += 1
+
