@@ -346,3 +346,8 @@ val = 1
 while val < 50:
     print(val)
     val *= 2
+
+i = 1
+while i <= 5:
+    print(f"3 x {i} = {3 * i}")
+    i += 1
