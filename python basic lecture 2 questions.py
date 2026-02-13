@@ -336,3 +336,8 @@ while i <= 10:
 user_input = ""
 while user_input.lower() != "exit":
     user_input = input("Type something (or 'exit' to quit): ")
+
+password = ""
+while password != "secret":
+    password = input("Enter password: ")
+print("Access Granted!")
