@@ -359,3 +359,11 @@ while n < 100:
         break
     print(n)
     n += 1
+
+
+x = 1
+while x < 3:
+    print(f"Value: {x}")
+    x += 1
+else:
+    print("Loop finished successfully.")
