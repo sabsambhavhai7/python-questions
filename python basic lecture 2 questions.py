@@ -341,3 +341,8 @@ password = ""
 while password != "secret":
     password = input("Enter password: ")
 print("Access Granted!")
+
+val = 1
+while val < 50:
+    print(val)
+    val *= 2
