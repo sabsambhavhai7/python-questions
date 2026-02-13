@@ -351,3 +351,11 @@ i = 1
 while i <= 5:
     print(f"3 x {i} = {3 * i}")
     i += 1
+]
+
+n = 1
+while n < 100:
+    if n == 4:
+        break
+    print(n)
+    n += 1
