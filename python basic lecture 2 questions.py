@@ -333,3 +333,6 @@ while i <= 10:
     print(i)
     i += 2
 
+user_input = ""
+while user_input.lower() != "exit":
+    user_input = input("Type something (or 'exit' to quit): ")
