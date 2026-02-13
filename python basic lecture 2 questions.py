@@ -327,3 +327,9 @@ while num <= 5:
     total += num
     num += 1
 print(f"Total sum: {total}")
+
+i = 2
+while i <= 10:
+    print(i)
+    i += 2
+
