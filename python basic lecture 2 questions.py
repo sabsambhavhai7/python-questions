@@ -418,3 +418,13 @@ i=0
 while i < len(numbser):
     print(numbser[i])
     i += 1 
+
+numbser = (1,4,9,16,25,36,49,64,81,100)
+x=36 
+i=0
+while i < len(numbser):
+    if numbser[i] == x:
+        print("Found")
+        break
+    i += 1 
+
