@@ -367,3 +367,14 @@ while x < 3:
     x += 1
 else:
     print("Loop finished successfully.")
+
+
+
+# for loop
+
+  list1 = [1,2,3,4,5]
+for value in list1:
+     print(value)
+
+
+
