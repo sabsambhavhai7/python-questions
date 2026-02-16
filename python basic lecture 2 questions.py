@@ -393,4 +393,8 @@ for value in list2:
    if value == x:
       print("Found the value:", x)
       break
-   print(value)  
+   print(value) 
+
+seq= range(5)
+for i in seq:
+    print(i)
