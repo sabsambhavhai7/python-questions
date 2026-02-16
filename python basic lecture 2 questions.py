@@ -398,3 +398,7 @@ for value in list2:
 seq= range(5)
 for i in seq:
     print(i)
+
+while counter < 5:
+    print("This is an infinite loop")
+    counter += 1
