@@ -384,3 +384,13 @@ for value in tuple1:
 str= "Hello, World!"
 for char in str:
     print(char)
+
+
+
+list2 = [1,4,9,16,25,36,49,64,81,100]
+x=49
+for value in list2:
+   if value == x:
+      print("Found the value:", x)
+      break
+   print(value)  
