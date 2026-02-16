@@ -402,3 +402,8 @@ for i in seq:
 while counter < 5:
     print("This is an infinite loop")
     counter += 1
+
+i=1
+while i <= 100000:
+        print("Sambhav Shukla",i)
+        i += 2
