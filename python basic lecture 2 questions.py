@@ -428,5 +428,10 @@ while i < len(numbser):
         break
     i += 1 
 
-
+     
+def calc_sunm(a, b):
+    sum = a + b
+    return sum  
+result = calc_sunm(5, 10)
+print(result)
 
