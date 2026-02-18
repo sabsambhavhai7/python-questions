@@ -448,3 +448,9 @@ for i in range(1, n+1):
          fact *= i
 print(fact)
 cal_factorial(5)
+
+
+def converter(usd_value):
+     inr_value = usd_value * 82.5
+     print(usd_value,"USD is equal to", inr_value, "INR")
+converter(100)
