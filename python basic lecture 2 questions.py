@@ -463,6 +463,12 @@ def factorial(n):
         return n * factorial(n - 1)
 print (factorial(5))    
 
+def print_list(lst,index=0):
+    if index >= len(lst):
+        return
+    else:
+        print(lst[index])
+        print_list(lst,index+1)
 
 ef sum_of_natural_numbers(n):
     if n <= 0:
