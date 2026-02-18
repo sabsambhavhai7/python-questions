@@ -435,3 +435,10 @@ def calc_sunm(a, b):
 result = calc_sunm(5, 10)
 print(result)
 
+def inputnumber():
+    num = int(input("Enter a number: "))
+    if num % 2 == 0:
+        print("Even")
+    else:        print("Odd")
+inputnumber()   
+
