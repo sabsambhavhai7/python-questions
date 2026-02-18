@@ -476,3 +476,7 @@ ef sum_of_natural_numbers(n):
     else:
         return n + sum_of_natural_numbers(n - 1)
 print(sum_of_natural_numbers(10))   
+
+ fruits = ["apple", "banana", "cherry", "date", "elderberry"]
+print_list(fruits)
+ 
