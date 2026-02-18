@@ -454,3 +454,11 @@ def converter(usd_value):
      inr_value = usd_value * 82.5
      print(usd_value,"USD is equal to", inr_value, "INR")
 converter(100)
+
+# RECURSION
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+print (factorial(5))    
