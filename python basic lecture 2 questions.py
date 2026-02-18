@@ -462,3 +462,11 @@ def factorial(n):
     else:
         return n * factorial(n - 1)
 print (factorial(5))    
+
+
+ef sum_of_natural_numbers(n):
+    if n <= 0:
+        return 0
+    else:
+        return n + sum_of_natural_numbers(n - 1)
+print(sum_of_natural_numbers(10))   
