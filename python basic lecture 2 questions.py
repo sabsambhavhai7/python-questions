@@ -499,4 +499,17 @@ print(sum_of_natural_numbers(10))
  fruits = ["apple", "banana", "cherry", "date", "elderberry"]
 print_list(fruits)
 
+def inputnumber():
+    num = int(input("Enter a number: "))
+    if num % 2 == 0:
+        print("Even")
+    else:        print("Odd")
+inputnumber()   
+
+def cal_factorial(n):
+   fact =1 
+for i in range(1, n+1):
+         fact *= i
+print(fact)
+cal_factorial(5)
 
