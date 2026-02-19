@@ -528,3 +528,10 @@ for value in list2:
       print("Found the value:", x)
       break
    print(value
+
+         i=0
+while i < 5:
+    if i == 3:
+      continue
+    print(i)
+    i += 1
