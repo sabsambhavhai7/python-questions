@@ -520,3 +520,11 @@ def factorial(n):
     else:
         return n * factorial(n - 1)
 print (factorial(5)) 
+
+list2 = [1,4,9,16,25,36,49,64,81,100]
+x=49
+for value in list2:
+   if value == x:
+      print("Found the value:", x)
+      break
+   print(value
