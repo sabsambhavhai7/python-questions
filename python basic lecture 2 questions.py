@@ -479,4 +479,11 @@ print(sum_of_natural_numbers(10))
 
  fruits = ["apple", "banana", "cherry", "date", "elderberry"]
 print_list(fruits)
- 
+
+
+#  lecture 7   files io 
+f=open("file.txt", "w")
+data=f.read()
+print(data)
+print (type(data))
+
