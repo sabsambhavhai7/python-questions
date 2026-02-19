@@ -486,4 +486,6 @@ f=open("file.txt", "w")
 data=f.read()
 print(data)
 print (type(data))
+f.close()
+
 
