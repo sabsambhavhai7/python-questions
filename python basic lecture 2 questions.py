@@ -549,3 +549,6 @@ ef sum_of_natural_numbers(n):
     else:
         return n + sum_of_natural_numbers(n - 1)
 print(sum_of_natural_numbers(10))   
+
+with open("note.txt", "w") as f:
+    f.write("This is the first line.\n")
