@@ -567,3 +567,10 @@ with open("note.txt", "r") as f:
 lines_to_add = ["Line 1\n", "Line 2\n", "Line 3\n"]
 with open("list_data.txt", "w") as f:
     f.writelines(lines_to_add)
+
+import os
+
+if os.path.exists("note.txt"):
+    print("File found!")
+else:
+    print("File is missing.")
