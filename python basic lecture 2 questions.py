@@ -552,3 +552,7 @@ print(sum_of_natural_numbers(10))
 
 with open("note.txt", "w") as f:
     f.write("This is the first line.\n")
+
+with open("note.txt", "a") as f:
+    f.write("This line was added later.\n")
+
