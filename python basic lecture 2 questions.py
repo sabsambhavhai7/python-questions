@@ -574,3 +574,16 @@ if os.path.exists("note.txt"):
     print("File found!")
 else:
     print("File is missing.")
+
+import json
+
+user_data = {"id": 1, "name": "Gemini", "active": True}
+
+# Save to file
+with open("user.json", "w") as f:
+    json.dump(user_data, f)
+
+# Read from file
+with open("user.json", "r") as f:
+    data = json.load(f)
+    print(data["name"])
