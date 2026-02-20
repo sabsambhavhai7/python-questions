@@ -587,3 +587,9 @@ with open("user.json", "w") as f:
 with open("user.json", "r") as f:
     data = json.load(f)
     print(data["name"])
+
+with open("input_image.jpg", "rb") as original:
+    data = original.read()
+
+with open("copy_image.jpg", "wb") as copy:
+    copy.write(data)
