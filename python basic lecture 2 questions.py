@@ -559,3 +559,7 @@ with open("note.txt", "a") as f:
 with open("note.txt", "r") as f:
     content = f.read()
     print(content)
+
+with open("note.txt", "r") as f:
+    lines = f.readlines()
+    print(f"The file has {len(lines)} lines.")
