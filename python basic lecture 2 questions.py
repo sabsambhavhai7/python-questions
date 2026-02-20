@@ -593,3 +593,9 @@ with open("input_image.jpg", "rb") as original:
 
 with open("copy_image.jpg", "wb") as copy:
     copy.write(data)
+
+from pathlib import Path
+
+path = Path("documents") / "work" / "report.txt"
+path.parent.mkdir(parents=True, exist_ok=True) # Create folders if missing
+path.write_text("Professional report content.")
