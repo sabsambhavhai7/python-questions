@@ -556,3 +556,6 @@ with open("note.txt", "w") as f:
 with open("note.txt", "a") as f:
     f.write("This line was added later.\n")
 
+with open("note.txt", "r") as f:
+    content = f.read()
+    print(content)
