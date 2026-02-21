@@ -627,3 +627,9 @@ print(f"First fruit in your list: {fruit_list[0].strip()}")
 radius = float(input("Enter radius: "))
 area = 3.14159 * (radius ** 2)
 print(f"The area of the circle is: {area:.2f}") # Rounds to 2 decimal places
+
+password = input("Enter password: ")
+if password == "python123":
+    print("Access Granted.")
+else:
+    print("Access Denied.")
