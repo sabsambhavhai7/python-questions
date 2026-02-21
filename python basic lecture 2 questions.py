@@ -603,7 +603,6 @@ path.write_text("Professional report content.")
 name = input("Enter your name: ")
 print(f"Hello, {name}! Welcome to the world of AI.")
 
-string name;
-cout << "Enter your name: ";
-cin >> name;
-cout << "Hello, " << name << "!" << endl;
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+print(f"The total sum is: {num1 + num2}")
