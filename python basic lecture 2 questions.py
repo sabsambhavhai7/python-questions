@@ -633,3 +633,7 @@ if password == "python123":
     print("Access Granted.")
 else:
     print("Access Denied.")
+
+word = input("Enter a word: ")
+repeats = int(input("How many times? "))
+print((word + " ") * repeats)
