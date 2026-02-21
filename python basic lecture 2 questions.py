@@ -606,3 +606,7 @@ print(f"Hello, {name}! Welcome to the world of AI.")
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
 print(f"The total sum is: {num1 + num2}")
+
+price = float(input("Enter item price: "))
+quantity = int(input("How many? "))
+print(f"Total Cost: ${price * quantity}")
