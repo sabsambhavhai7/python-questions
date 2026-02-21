@@ -599,3 +599,6 @@ from pathlib import Path
 path = Path("documents") / "work" / "report.txt"
 path.parent.mkdir(parents=True, exist_ok=True) # Create folders if missing
 path.write_text("Professional report content.")
+
+name = input("Enter your name: ")
+print(f"Hello, {name}! Welcome to the world of AI.")
