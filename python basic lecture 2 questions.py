@@ -614,3 +614,7 @@ print(f"Total Cost: ${price * quantity}")
 # User enters: 10 20 30
 a, b, c = input("Enter three numbers: ").split()
 print(f"Values received: {a}, {b}, and {c}")
+
+age = int(input("Your age: "))
+years_to_100 = 100 - age
+print(f"You will be 100 years old in {years_to_100} years.")
