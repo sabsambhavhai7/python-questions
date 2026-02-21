@@ -610,3 +610,7 @@ print(f"The total sum is: {num1 + num2}")
 price = float(input("Enter item price: "))
 quantity = int(input("How many? "))
 print(f"Total Cost: ${price * quantity}")
+
+# User enters: 10 20 30
+a, b, c = input("Enter three numbers: ").split()
+print(f"Values received: {a}, {b}, and {c}")
