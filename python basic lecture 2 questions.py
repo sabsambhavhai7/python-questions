@@ -618,3 +618,8 @@ print(f"Values received: {a}, {b}, and {c}")
 age = int(input("Your age: "))
 years_to_100 = 100 - age
 print(f"You will be 100 years old in {years_to_100} years.")
+
+# Enter fruits separated by commas
+data = input("Enter 3 fruits (comma separated): ")
+fruit_list = data.split(",")
+print(f"First fruit in your list: {fruit_list[0].strip()}")
