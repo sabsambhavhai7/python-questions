@@ -602,3 +602,8 @@ path.write_text("Professional report content.")
 
 name = input("Enter your name: ")
 print(f"Hello, {name}! Welcome to the world of AI.")
+
+string name;
+cout << "Enter your name: ";
+cin >> name;
+cout << "Hello, " << name << "!" << endl;
