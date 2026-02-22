@@ -637,3 +637,12 @@ else:
 word = input("Enter a word: ")
 repeats = int(input("How many times? "))
 print((word + " ") * repeats)
+
+class Dog:
+    def __init__(self, name, breed):
+        self.name = name  # Attribute
+        self.breed = breed
+
+# Creating an object
+my_dog = Dog("Buddy", "Golden Retriever")
+print(f"{my_dog.name} is a {my_dog.breed}.")
