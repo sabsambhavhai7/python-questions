@@ -658,3 +658,15 @@ class Circle:
 
 my_circle = Circle(5)
 print(f"Area: {my_circle.area()}")
+
+
+class Animal:
+    def speak(self):
+        print("Animal makes a sound")
+
+class Cat(Animal): # Inherits from Animal
+    def speak(self):
+        print("Meow!")
+
+my_cat = Cat()
+my_cat.speak()
