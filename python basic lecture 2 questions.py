@@ -696,3 +696,17 @@ class BankAccount:
 account = BankAccount(1000)
 account.deposit(500)
 # print(account.__balance)  # This would raise an AttributeError
+
+class Bird:
+    def fly(self):
+        print("Most birds can fly.")
+
+class Penguin(Bird):
+    def fly(self):
+        print("Penguins swim instead of flying.")
+
+def make_it_fly(bird_obj):
+    bird_obj.fly()
+
+make_it_fly(Bird())
+make_it_fly(Penguin())
