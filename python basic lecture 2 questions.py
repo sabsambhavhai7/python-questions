@@ -646,3 +646,15 @@ class Dog:
 # Creating an object
 my_dog = Dog("Buddy", "Golden Retriever")
 print(f"{my_dog.name} is a {my_dog.breed}.")
+
+class Circle:
+    pi = 3.14159 # Class-level attribute
+
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return self.pi * (self.radius ** 2)
+
+my_circle = Circle(5)
+print(f"Area: {my_circle.area()}")
