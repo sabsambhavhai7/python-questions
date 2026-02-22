@@ -683,3 +683,16 @@ class Manager(Employee):
 
 boss = Manager("Alice", 90000, "IT")
 print(f"{boss.name} manages {boss.department}.")
+
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance # Private attribute
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+            print(f"Balance updated: {self.__balance}")
+
+account = BankAccount(1000)
+account.deposit(500)
+# print(account.__balance)  # This would raise an AttributeError
