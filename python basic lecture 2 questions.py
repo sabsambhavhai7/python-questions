@@ -722,3 +722,21 @@ class Calculator:
 
 print(Calculator.add(10, 5))
 print(Calculator.info())
+
+class Temperature:
+    def __init__(self, celsius):
+        self._celsius = celsius
+
+    @property
+    def celsius(self):
+        return self._celsius
+
+    @celsius.setter
+    def celsius(self, value):
+        if value < -273.15:
+            print("Temperature below absolute zero is impossible!")
+        else:
+            self._celsius = value
+
+temp = Temperature(25)
+temp.celsius = -300 # Triggers the setter logic
