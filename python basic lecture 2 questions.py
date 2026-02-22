@@ -670,3 +670,16 @@ class Cat(Animal): # Inherits from Animal
 
 my_cat = Cat()
 my_cat.speak()
+
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+class Manager(Employee):
+    def __init__(self, name, salary, department):
+        super().__init__(name, salary) # Pulls name and salary from Employee
+        self.department = department
+
+boss = Manager("Alice", 90000, "IT")
+print(f"{boss.name} manages {boss.department}.")
