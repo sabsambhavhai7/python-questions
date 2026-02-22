@@ -740,3 +740,18 @@ class Temperature:
 
 temp = Temperature(25)
 temp.celsius = -300 # Triggers the setter logic
+
+class Book:
+    def __init__(self, title, pages):
+        self.title = title
+        self.pages = pages
+
+    def __str__(self): # Controls what print() shows
+        return f"'{self.title}' is {self.pages} pages long."
+
+    def __len__(self): # Allows len(book_obj)
+        return self.pages
+
+my_book = Book("Python 101", 250)
+print(my_book)
+print(len(my_book))
