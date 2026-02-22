@@ -755,3 +755,21 @@ class Book:
 my_book = Book("Python 101", 250)
 print(my_book)
 print(len(my_book))
+
+
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class Square(Shape):
+    def __init__(self, side):
+        self.side = side
+    
+    def area(self): # Must implement this or Python will throw an error
+        return self.side * self.side
+
+sq = Square(4)
+print(f"Square area: {sq.area()}")
