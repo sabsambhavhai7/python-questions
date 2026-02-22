@@ -710,3 +710,15 @@ def make_it_fly(bird_obj):
 
 make_it_fly(Bird())
 make_it_fly(Penguin())
+
+class Calculator:
+    @staticmethod
+    def add(x, y):
+        return x + y
+
+    @classmethod
+    def info(cls):
+        return f"This is the {cls.__name__} class."
+
+print(Calculator.add(10, 5))
+print(Calculator.info())
