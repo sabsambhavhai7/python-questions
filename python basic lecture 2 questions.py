@@ -773,3 +773,6 @@ class Square(Shape):
 
 sq = Square(4)
 print(f"Square area: {sq.area()}")
+
+nums = [10, 20, 30, 40, 50, 60]
+print(nums[1:4])
