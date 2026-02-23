@@ -780,3 +780,6 @@ print(nums[1:4])
 x = 5
 y = 10
 print(not (x > 3 and y < 10))
+
+for i in range(2, 10, 3):
+    print("Hello")
