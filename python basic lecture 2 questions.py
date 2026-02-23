@@ -786,3 +786,10 @@ for i in range(2, 10, 3):
 
 for i in range(2, 10, 3):
     print("Hello")
+
+def add_item(item, box=[]):
+    box.append(item)
+    return box
+
+add_item("apple")
+print(add_item("banana"))
