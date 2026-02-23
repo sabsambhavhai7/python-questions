@@ -803,3 +803,10 @@ if val % 5 == 0:
 squares = []
 for x in range(5):
     squares.append(x * x)
+
+def add_item(item, box=[]):
+    box.append(item)
+    return box
+
+add_item("apple")
+print(add_item("banana"))
