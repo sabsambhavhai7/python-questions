@@ -817,3 +817,10 @@ def add_item(item, box=[]):
 
 add_item("apple")
 print(add_item("banana"))
+
+def add_item(item, box=[]):
+    box.append(item)
+    return box
+
+add_item("apple")
+print(add_item("banana"))
