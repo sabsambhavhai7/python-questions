@@ -837,3 +837,8 @@ for x in range(5):
 
 for i in range(2, 10, 3):
     print("Hello")
+
+data = {
+    "fruits": ["apple", "banana", "cherry"],
+    "colors": {"red": 1, "yellow": 2}
+}
