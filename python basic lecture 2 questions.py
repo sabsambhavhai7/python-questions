@@ -776,3 +776,7 @@ print(f"Square area: {sq.area()}")
 
 nums = [10, 20, 30, 40, 50, 60]
 print(nums[1:4])
+
+x = 5
+y = 10
+print(not (x > 3 and y < 10))
