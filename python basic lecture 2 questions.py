@@ -834,3 +834,6 @@ if val % 5 == 0:
 squares = []
 for x in range(5):
     squares.append(x * x)
+
+for i in range(2, 10, 3):
+    print("Hello")
