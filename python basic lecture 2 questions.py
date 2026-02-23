@@ -830,3 +830,7 @@ if val % 3 == 0:
     print("Fizz", end="")
 if val % 5 == 0:
     print("Buzz", end="")
+
+squares = []
+for x in range(5):
+    squares.append(x * x)
