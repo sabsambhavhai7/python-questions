@@ -842,3 +842,17 @@ data = {
     "fruits": ["apple", "banana", "cherry"],
     "colors": {"red": 1, "yellow": 2}
 }
+
+# COMTANINATION
+STRING1="`Hello"
+STRING2=" World`" 
+FINAL_STRING= STRING1 + STRING2
+print(FINAL_STRING)
+len1=len(STRING1)
+len2=len(STRING2)
+TOTAL_LENGTH=len1 + len2
+print(TOTAL_LENGTH)     
+
+
+# INDEXING
+
