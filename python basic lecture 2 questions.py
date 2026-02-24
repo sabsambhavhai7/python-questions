@@ -871,3 +871,11 @@ if val % 3 == 0:
     print("Fizz", end="")
 if val % 5 == 0:
     print("Buzz", end="")
+
+val = 15
+if val % 3 == 0:
+    print("Fizz", end="")
+if val % 5 == 0:
+    print("Buzz", end="")
+
+
