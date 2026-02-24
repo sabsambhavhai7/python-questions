@@ -834,9 +834,11 @@ if val % 5 == 0:
 squares = []
 for x in range(5):
     squares.append(x * x)
-
-for i in range(2, 10, 3):
-    print("Hello")
+val = 15
+if val % 3 == 0:
+    print("Fizz", end="")
+if val % 5 == 0:
+    print("Buzz", end="")
 
 data = {
     "fruits": ["apple", "banana", "cherry"],
@@ -864,3 +866,8 @@ if val % 5 == 0:
     print("Buzz", end="")
 
 
+val = 15
+if val % 3 == 0:
+    print("Fizz", end="")
+if val % 5 == 0:
+    print("Buzz", end="")
