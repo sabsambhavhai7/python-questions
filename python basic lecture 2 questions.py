@@ -893,3 +893,8 @@ if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
     print("Leap Year")
 else:
     print("Not a Leap Year")
+
+a, b = 0, 1
+for _ in range(10):
+    print(a, end=" ")
+    a, b = b, a + b
