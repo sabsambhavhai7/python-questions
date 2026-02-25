@@ -884,3 +884,6 @@ if val % 3 == 0:
 if val % 5 == 0:
     print("Buzz", end="")
 
+a, b = 5, 10
+a, b = b, a
+print(f"a: {a}, b: {b}") # a: 10, b: 5
