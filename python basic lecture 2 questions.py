@@ -908,3 +908,7 @@ print(is_palindrome("Radar")) # True
 nums = [10, 20, 30, 40, 50]
 reversed_nums = nums[::-1]
 print(reversed_nums)
+
+scores = {"Alice": 88, "Bob": 95, "Charlie": 92}
+top_student = max(scores, key=scores.get)
+print(f"Top Student: {top_student} with {scores[top_student]}")
