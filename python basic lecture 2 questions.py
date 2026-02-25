@@ -924,3 +924,12 @@ print(is_prime(17)) # True
 
 squares = [x**2 for x in range(1, 21) if x % 2 == 0]
 print(squares)
+
+try:
+    num1 = float(input("Enter numerator: "))
+    num2 = float(input("Enter denominator: "))
+    print(f"Result: {num1 / num2}")
+except ZeroDivisionError:
+    print("Error: You cannot divide by zero!")
+except ValueError:
+    print("Error: Please enter valid numbers.")
