@@ -904,3 +904,7 @@ def is_palindrome(s):
     return clean_s == clean_s[::-1]
 
 print(is_palindrome("Radar")) # True
+
+nums = [10, 20, 30, 40, 50]
+reversed_nums = nums[::-1]
+print(reversed_nums)
