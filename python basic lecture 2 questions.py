@@ -898,3 +898,9 @@ a, b = 0, 1
 for _ in range(10):
     print(a, end=" ")
     a, b = b, a + b
+
+def is_palindrome(s):
+    clean_s = s.lower()
+    return clean_s == clean_s[::-1]
+
+print(is_palindrome("Radar")) # True
