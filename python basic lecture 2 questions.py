@@ -933,3 +933,13 @@ except ZeroDivisionError:
     print("Error: You cannot divide by zero!")
 except ValueError:
     print("Error: Please enter valid numbers.")
+
+
+# Writing
+with open("test.txt", "w") as f:
+    f.write("Hello Python")
+
+# Reading
+with open("test.txt", "r") as f:
+    content = f.read()
+    print(content)
