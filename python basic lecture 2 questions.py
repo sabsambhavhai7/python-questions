@@ -912,3 +912,12 @@ print(reversed_nums)
 scores = {"Alice": 88, "Bob": 95, "Charlie": 92}
 top_student = max(scores, key=scores.get)
 print(f"Top Student: {top_student} with {scores[top_student]}")
+
+def is_prime(n):
+    if n < 2: return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+print(is_prime(17)) # True
