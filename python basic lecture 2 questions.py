@@ -973,3 +973,7 @@ while count <= 5:
     print("Number:", count)
     count += 1
 
+def greet_user(username):
+    print(f"Welcome back, {username}!")
+
+greet_user("Alex")
