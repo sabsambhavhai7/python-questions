@@ -985,5 +985,11 @@ student = {
 }
 print(student["subject"])
 
+student = {
+    "name": "Sarah",
+    "grade": "A",
+    "subject": "Physics"
+}
+print(student["subject"])
 
 
