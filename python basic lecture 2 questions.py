@@ -959,3 +959,8 @@ if age >= 18:
     print("You are an adult.")
 else:
     print("You are a minor.")
+
+fruits = ["apple", "banana", "cherry"]
+fruits.append("orange") # Adds to the list
+print(fruits[0])        # Prints the first item: apple
+
