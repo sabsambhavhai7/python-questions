@@ -978,4 +978,12 @@ def greet_user(username):
 
 greet_user("Alex")
 
+student = {
+    "name": "Sarah",
+    "grade": "A",
+    "subject": "Physics"
+}
+print(student["subject"])
+
+
 
