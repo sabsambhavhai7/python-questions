@@ -968,5 +968,8 @@ colors = ["red", "green", "blue"]
 for color in colors:
     print("I like " + color)
 
-
+count = 1
+while count <= 5:
+    print("Number:", count)
+    count += 1
 
