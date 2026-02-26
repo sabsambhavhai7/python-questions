@@ -943,3 +943,5 @@ with open("test.txt", "w") as f:
 with open("test.txt", "r") as f:
     content = f.read()
     print(content)
+
+print("Hello, Python world!")
