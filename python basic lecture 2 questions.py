@@ -964,3 +964,9 @@ fruits = ["apple", "banana", "cherry"]
 fruits.append("orange") # Adds to the list
 print(fruits[0])        # Prints the first item: apple
 
+colors = ["red", "green", "blue"]
+for color in colors:
+    print("I like " + color)
+
+
+
