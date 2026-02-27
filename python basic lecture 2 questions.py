@@ -1000,3 +1000,8 @@ print(f"Your lucky number today is: {secret_number}")
 numbers = [1, 2, 3, 4, 5]
 squares = [n**2 for n in numbers]
 print(squares)  # Output: [1, 4, 9, 16, 25]
+
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Oops! You can't divide by zero.")
