@@ -1025,3 +1025,6 @@ with open("test.txt", "w") as f:
 text = "PythonProgramming"
 print(text[0:6])  # Output: Python
 print(text[-11:]) # Output: Programming
+
+add_ten = lambda x: x + 10
+print(add_ten(5))  # Output: 15
