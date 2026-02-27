@@ -1005,3 +1005,13 @@ try:
     result = 10 / 0
 except ZeroDivisionError:
     print("Oops! You can't divide by zero.")
+
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+    def bark(self):
+        return f"{self.name} says Woof!"
+
+my_dog = Dog("Buddy")
+print(my_dog.bark())
