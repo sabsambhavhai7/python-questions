@@ -1018,3 +1018,6 @@ print(my_dog.bark())
 
 numbers = {1, 2, 2, 3, 4, 4}
 print(numbers)  # Output: {1, 2, 3, 4}
+
+with open("test.txt", "w") as f:
+    f.write("Hello, I am writing to a file!")
