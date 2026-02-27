@@ -996,3 +996,7 @@ import random
 
 secret_number = random.randint(1, 10)
 print(f"Your lucky number today is: {secret_number}")
+
+numbers = [1, 2, 3, 4, 5]
+squares = [n**2 for n in numbers]
+print(squares)  # Output: [1, 4, 9, 16, 25]
