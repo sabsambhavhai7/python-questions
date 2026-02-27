@@ -1021,3 +1021,7 @@ print(numbers)  # Output: {1, 2, 3, 4}
 
 with open("test.txt", "w") as f:
     f.write("Hello, I am writing to a file!")
+
+text = "PythonProgramming"
+print(text[0:6])  # Output: Python
+print(text[-11:]) # Output: Programming
