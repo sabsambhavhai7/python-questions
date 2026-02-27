@@ -1028,3 +1028,7 @@ print(text[-11:]) # Output: Programming
 
 add_ten = lambda x: x + 10
 print(add_ten(5))  # Output: 15
+
+point = (10, 20)
+x, y = point
+print(f"X: {x}, Y: {y}")
