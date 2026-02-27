@@ -1032,3 +1032,7 @@ print(add_ten(5))  # Output: 15
 point = (10, 20)
 x, y = point
 print(f"X: {x}, Y: {y}")
+
+user = {"name": "Alice", "role": "Admin"}
+for key, value in user.items():
+    print(f"{key}: {value}")
