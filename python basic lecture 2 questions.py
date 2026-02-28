@@ -1046,6 +1046,12 @@ b = 10
 a, b = b, a
 print(f"a is {a}, b is {b}")
 
+from collections import Counter
+
+data = ["apple", "apple", "orange", "banana", "apple"]
+count = Counter(data)
+print(count.most_common(1)) # [('apple', 3)]
+
 letters = ["a", "b", "c", "d", "e"]
 print(letters[:3])   # First three: ['a', 'b', 'c']
 print(letters[::-1])  # Reverse the list!
