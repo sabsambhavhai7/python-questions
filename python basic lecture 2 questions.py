@@ -1026,6 +1026,11 @@ text = "PythonProgramming"
 print(text[0:6])  # Output: Python
 print(text[-11:]) # Output: Programming
 
+dict1 = {"a": 1, "b": 2}
+dict2 = {"c": 3, "d": 4}
+merged = dict1 | dict2
+print(merged) # {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+
 add_ten = lambda x: x + 10
 print(add_ten(5))  # Output: 15
 
