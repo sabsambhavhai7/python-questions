@@ -1068,3 +1068,8 @@ print(students)
 tasks = ["Write code", "Test code", "Ship code"]
 for index, task in enumerate(tasks, start=1):
     print(f"{index}. {task}")
+
+import sys
+
+my_list = [i for i in range(1000)]
+print(f"Memory used: {sys.getsizeof(my_list)} bytes")
