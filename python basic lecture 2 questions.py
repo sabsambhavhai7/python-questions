@@ -1077,3 +1077,12 @@ print(flat) # [1, 2, 3, 4, 5, 6]
 
 my_list = [i for i in range(1000)]
 print(f"Memory used: {sys.getsizeof(my_list)} bytes")
+
+import time
+
+start_time = time.time()
+# Simulating a task
+time.sleep(1) 
+end_time = time.time()
+
+print(f"Task took {end_time - start_time:.2f} seconds")
