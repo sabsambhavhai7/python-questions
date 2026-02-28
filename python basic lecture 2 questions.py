@@ -1045,3 +1045,7 @@ a = 5
 b = 10
 a, b = b, a
 print(f"a is {a}, b is {b}")
+
+letters = ["a", "b", "c", "d", "e"]
+print(letters[:3])   # First three: ['a', 'b', 'c']
+print(letters[::-1])  # Reverse the list!
