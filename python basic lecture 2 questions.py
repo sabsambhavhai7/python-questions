@@ -1041,3 +1041,7 @@ print(f"X: {x}, Y: {y}")
 user = {"name": "Alice", "role": "Admin"}
 for key, value in user.items():
     print(f"{key}: {value}")
+a = 5
+b = 10
+a, b = b, a
+print(f"a is {a}, b is {b}")
