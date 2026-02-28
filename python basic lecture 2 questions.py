@@ -1064,3 +1064,7 @@ students = [("Alice", 88), ("Bob", 75), ("Charlie", 92)]
 # Sort by the second item in the tuple (the score)
 students.sort(key=lambda x: x[1])
 print(students)
+
+tasks = ["Write code", "Test code", "Ship code"]
+for index, task in enumerate(tasks, start=1):
+    print(f"{index}. {task}")
