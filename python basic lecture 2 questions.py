@@ -1055,3 +1055,7 @@ print(count.most_common(1)) # [('apple', 3)]
 letters = ["a", "b", "c", "d", "e"]
 print(letters[:3])   # First three: ['a', 'b', 'c']
 print(letters[::-1])  # Reverse the list!
+
+words = ["Python", "is", "awesome"]
+sentence = " ".join(words)
+print(sentence) # "Python is awesome"
