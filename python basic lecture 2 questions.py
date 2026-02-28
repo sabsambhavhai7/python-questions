@@ -1059,3 +1059,8 @@ print(letters[::-1])  # Reverse the list!
 words = ["Python", "is", "awesome"]
 sentence = " ".join(words)
 print(sentence) # "Python is awesome"
+
+students = [("Alice", 88), ("Bob", 75), ("Charlie", 92)]
+# Sort by the second item in the tuple (the score)
+students.sort(key=lambda x: x[1])
+print(students)
