@@ -1071,5 +1071,9 @@ for index, task in enumerate(tasks, start=1):
 
 import sys
 
+nested = [[1, 2], [3, 4], [5, 6]]
+flat = [num for sublist in nested for num in sublist]
+print(flat) # [1, 2, 3, 4, 5, 6]
+
 my_list = [i for i in range(1000)]
 print(f"Memory used: {sys.getsizeof(my_list)} bytes")
