@@ -1115,3 +1115,9 @@ print(all(bool_list)) # False (not all are True)
 
 salary = 100_000_000 
 print(f"Salary: {salary:,}") # Output: 100,000,000
+
+import os
+
+# Get a variable named 'USER_NAME' from your system
+user = os.getenv("USER", "Guest")
+print(f"Hello, {user}")
