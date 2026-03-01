@@ -1125,3 +1125,6 @@ print(f"Hello, {user}")
 word = "Python"
 reversed_word = word[::-1]
 print(reversed_word) # nohtyP
+
+multiply = lambda x, y: x * y
+print(multiply(5, 6)) # 30
