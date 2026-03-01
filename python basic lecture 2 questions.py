@@ -1086,3 +1086,10 @@ time.sleep(1)
 end_time = time.time()
 
 print(f"Task took {end_time - start_time:.2f} seconds")
+
+list_a = [1, 2, 3, 4]
+list_b = [3, 4, 5, 6]
+
+# Find items in A but not in B
+unique = set(list_a) - set(list_b)
+print(unique) # {1, 2}
