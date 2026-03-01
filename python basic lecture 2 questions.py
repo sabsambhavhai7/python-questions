@@ -1098,3 +1098,7 @@ names = ["Alice", "Bob", "Charlie"]
 # Create a dictionary of name lengths
 name_lengths = {name: len(name) for name in names}
 print(name_lengths) # {'Alice': 5, 'Bob': 3, 'Charlie': 7}
+
+score = 85
+status = "Pass" if score >= 50 else "Fail"
+print(status)
