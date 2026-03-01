@@ -1128,3 +1128,9 @@ print(reversed_word) # nohtyP
 
 multiply = lambda x, y: x * y
 print(multiply(5, 6)) # 30
+
+def future_function():
+    # I'll write this later!
+    pass
+
+print("Program finished without crashing.")
