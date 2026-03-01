@@ -1107,3 +1107,8 @@ first, *middle, last = [1, 2, 3, 4, 5]
 print(first)  # 1
 print(middle) # [2, 3, 4]
 print(last)   # 5
+
+bool_list = [True, False, True]
+
+print(any(bool_list)) # True (at least one is True)
+print(all(bool_list)) # False (not all are True)
