@@ -1121,3 +1121,7 @@ import os
 # Get a variable named 'USER_NAME' from your system
 user = os.getenv("USER", "Guest")
 print(f"Hello, {user}")
+
+word = "Python"
+reversed_word = word[::-1]
+print(reversed_word) # nohtyP
