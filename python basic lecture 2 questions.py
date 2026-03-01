@@ -1112,3 +1112,6 @@ bool_list = [True, False, True]
 
 print(any(bool_list)) # True (at least one is True)
 print(all(bool_list)) # False (not all are True)
+
+salary = 100_000_000 
+print(f"Salary: {salary:,}") # Output: 100,000,000
