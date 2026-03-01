@@ -1102,3 +1102,8 @@ print(name_lengths) # {'Alice': 5, 'Bob': 3, 'Charlie': 7}
 score = 85
 status = "Pass" if score >= 50 else "Fail"
 print(status)
+
+first, *middle, last = [1, 2, 3, 4, 5]
+print(first)  # 1
+print(middle) # [2, 3, 4]
+print(last)   # 5
