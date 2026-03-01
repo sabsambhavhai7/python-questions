@@ -1093,3 +1093,8 @@ list_b = [3, 4, 5, 6]
 # Find items in A but not in B
 unique = set(list_a) - set(list_b)
 print(unique) # {1, 2}
+
+names = ["Alice", "Bob", "Charlie"]
+# Create a dictionary of name lengths
+name_lengths = {name: len(name) for name in names}
+print(name_lengths) # {'Alice': 5, 'Bob': 3, 'Charlie': 7}
