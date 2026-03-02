@@ -1184,3 +1184,13 @@ def make_pizza(size, *toppings, **details):
     print(f"Delivery notes: {details.get('notes', 'None')}")
 
 make_pizza(12, "mushrooms", "peppers", notes="Leave at front door")
+
+class DatabaseConnection:
+    def __enter__(self):
+        print("Connected to DB")
+        return self
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        print("Closed DB connection")
+
+with DatabaseConnection() as db:
+    print("Doing work...")
