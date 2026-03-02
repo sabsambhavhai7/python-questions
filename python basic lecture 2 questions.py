@@ -1134,3 +1134,12 @@ def future_function():
     pass
 
 print("Program finished without crashing.")
+
+def count_up_to(max):
+    count = 1
+    while count <= max:
+        yield count
+        count += 1
+
+counter = count_up_to(1000000)
+print(next(counter)) # Only calculates the next value when asked
