@@ -1155,3 +1155,8 @@ def greet(name):
     return f"Hello, {name}!"
 
 greet("Bob")
+
+prices = [10, 25, 50, 100]
+# Apply a 10% tax to every item
+taxed_prices = list(map(lambda x: x * 1.1, prices))
+print(taxed_prices)
