@@ -1194,3 +1194,10 @@ class DatabaseConnection:
 
 with DatabaseConnection() as db:
     print("Doing work...")
+
+required_skills = {"Python", "SQL", "Linux"}
+my_skills = {"Python", "Java"}
+
+missing = required_skills - my_skills
+common = required_skills & my_skills
+print(f"You need to learn: {missing}")
