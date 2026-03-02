@@ -1178,3 +1178,9 @@ scores = [85, 92, 78]
 
 for name, score in zip(names, scores):
     print(f"{name} scored {score}")
+
+def make_pizza(size, *toppings, **details):
+    print(f"Making a {size} inch pizza with {toppings}")
+    print(f"Delivery notes: {details.get('notes', 'None')}")
+
+make_pizza(12, "mushrooms", "peppers", notes="Leave at front door")
