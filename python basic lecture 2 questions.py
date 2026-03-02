@@ -1207,3 +1207,14 @@ import re
 text = "Contact us at support@company.com or sales@web.org"
 emails = re.findall(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', text)
 print(emails)
+
+from dataclasses import dataclass
+
+@dataclass
+class Product:
+    id: int
+    name: str
+    price: float
+
+item = Product(1, "Laptop", 999.99)
+print(item) # Output is nicely formatted automatically
