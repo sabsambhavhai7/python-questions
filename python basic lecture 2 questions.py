@@ -1143,3 +1143,15 @@ def count_up_to(max):
 
 counter = count_up_to(1000000)
 print(next(counter)) # Only calculates the next value when asked
+
+def debug(func):
+    def wrapper(*args, **kwargs):
+        print(f"Calling {func.__name__} with {args}")
+        return func(*args)
+    return wrapper
+
+@debug
+def greet(name):
+    return f"Hello, {name}!"
+
+greet("Bob")
