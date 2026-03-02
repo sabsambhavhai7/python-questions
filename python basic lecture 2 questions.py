@@ -1160,3 +1160,15 @@ prices = [10, 25, 50, 100]
 # Apply a 10% tax to every item
 taxed_prices = list(map(lambda x: x * 1.1, prices))
 print(taxed_prices)
+
+class Robot:
+    def __init__(self, name, battery):
+        self.name = name
+        self.battery = battery
+
+    def charge(self):
+        self.battery = 100
+        print(f"{self.name} is fully charged!")
+
+bot = Robot("Sparky", 45)
+bot.charge()
