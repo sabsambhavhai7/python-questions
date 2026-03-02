@@ -1201,3 +1201,9 @@ my_skills = {"Python", "Java"}
 missing = required_skills - my_skills
 common = required_skills & my_skills
 print(f"You need to learn: {missing}")
+
+import re
+
+text = "Contact us at support@company.com or sales@web.org"
+emails = re.findall(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', text)
+print(emails)
