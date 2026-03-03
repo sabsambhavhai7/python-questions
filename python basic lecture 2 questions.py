@@ -1243,3 +1243,18 @@ if __name__ == "__main__":
     processes = [Process(target=heavy_computation, args=(i,)) for i in range(4)]
     for p in processes: p.start()
     for p in processes: p.join()
+
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class Square(Shape):
+    def __init__(self, side):
+        self.side = side
+    def area(self):
+        return self.side**2
+
+# s = Shape()  <-- This would throw an error!
