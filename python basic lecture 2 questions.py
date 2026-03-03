@@ -1313,3 +1313,10 @@ class Database(metaclass=Singleton):
 db1 = Database()
 db2 = Database()
 print(db1 is db2)  # True: Both are the exact same instance
+
+import itertools
+
+# Get all combinations of 2 items
+items = ['A', 'B', 'C']
+combos = list(itertools.combinations(items, 2))
+print(combos) # [('A', 'B'), ('A', 'C'), ('B', 'C')]
