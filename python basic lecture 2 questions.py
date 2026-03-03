@@ -1218,3 +1218,18 @@ class Product:
 
 item = Product(1, "Laptop", 999.99)
 print(item) # Output is nicely formatted automatically
+
+import asyncio
+
+async def fetch_data():
+    print("Start fetching...")
+    await asyncio.sleep(2)  # Simulates an I/O bound task
+    print("Done fetching!")
+    return {"data": 123}
+
+async def main():
+    # Runs the coroutine
+    result = await fetch_data()
+    print(result)
+
+asyncio.run(main())
