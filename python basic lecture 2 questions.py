@@ -1276,3 +1276,11 @@ class Employee:
 emp = Employee(50000)
 emp.salary = 60000  # Sets via the setter
 print(emp.salary)   # Gets via the property
+
+from collections import deque
+
+queue = deque(["task1", "task2", "task3"])
+queue.append("task4")      # Add to right
+queue.appendleft("critical") # Add to left
+queue.popleft()            # Remove from left
+print(queue)
