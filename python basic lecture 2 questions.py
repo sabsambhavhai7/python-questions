@@ -1233,3 +1233,13 @@ async def main():
     print(result)
 
 asyncio.run(main())
+
+from multiprocessing import Process
+
+def heavy_computation(name):
+    print(f"Task {name} is processing millions of numbers...")
+
+if __name__ == "__main__":
+    processes = [Process(target=heavy_computation, args=(i,)) for i in range(4)]
+    for p in processes: p.start()
+    for p in processes: p.join()
