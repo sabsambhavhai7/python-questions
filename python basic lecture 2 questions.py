@@ -1333,3 +1333,20 @@ def handle_command(command):
             print("Unknown command")
 
 handle_command("move 10 20")
+
+from functools import singledispatch
+
+@singledispatch
+def report(value):
+    print(f"Generic report: {value}")
+
+@report.register(int)
+def _(value):
+    print(f"Integer report: {value * 10}")
+
+@report.register(list)
+def _(value):
+    print(f"List report: Items = {len(value)}")
+
+report(5)       # Triggers integer version
+report([1,2,3]) # Triggers list version
