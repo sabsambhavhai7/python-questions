@@ -1284,3 +1284,18 @@ queue.append("task4")      # Add to right
 queue.appendleft("critical") # Add to left
 queue.popleft()            # Remove from left
 print(queue)
+
+from contextlib import contextmanager
+
+@contextmanager
+def simple_timer(label):
+    import time
+    start = time.time()
+    try:
+        yield
+    finally:
+        end = time.time()
+        print(f"{label}: {end - start:.4f}s")
+
+with simple_timer("My Loop"):
+    sum(range(1000000))
