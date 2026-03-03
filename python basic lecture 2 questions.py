@@ -1258,3 +1258,21 @@ class Square(Shape):
         return self.side**2
 
 # s = Shape()  <-- This would throw an error!
+
+class Employee:
+    def __init__(self, salary):
+        self._salary = salary
+
+    @property
+    def salary(self):
+        return f"${self._salary:,}"
+
+    @salary.setter
+    def salary(self, value):
+        if value < 0:
+            raise ValueError("Salary cannot be negative!")
+        self._salary = value
+
+emp = Employee(50000)
+emp.salary = 60000  # Sets via the setter
+print(emp.salary)   # Gets via the property
