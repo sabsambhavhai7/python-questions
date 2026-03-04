@@ -1398,3 +1398,15 @@ arr = np.array([1, 2, 3, 4])
 # Vectorized operation: multiplies every element by 10 simultaneously
 result = arr * 10 
 print(result)
+
+import pickle
+
+data = {"scores": [90, 80, 70], "user": "Admin"}
+
+# Save to file
+with open("data.pkl", "wb") as f:
+    pickle.dump(data, f)
+
+# Load from file
+with open("data.pkl", "rb") as f:
+    loaded_data = pickle.load(f)
