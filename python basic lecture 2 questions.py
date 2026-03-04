@@ -1435,3 +1435,15 @@ import os
 db_password = os.getenv("DB_PASSWORD", "default_guest_password")
 if not db_password:
     print("Warning: Security key not found!")
+
+from apple_concurrent.futures import ThreadPoolExecutor
+import requests
+
+urls = ["https://google.com", "https://python.org", "https://github.com"]
+
+def fetch(url):
+    return requests.get(url).status_code
+
+with ThreadPoolExecutor(max_workers=5) as executor:
+    results = list(executor.map(fetch, urls))
+print(results)
