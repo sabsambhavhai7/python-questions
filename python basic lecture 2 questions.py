@@ -1416,3 +1416,6 @@ import os
 db_password = os.getenv("DB_PASSWORD", "default_guest_password")
 if not db_password:
     print("Warning: Security key not found!")
+
+# Run this in your terminal/command prompt
+python -m http.server 8000
