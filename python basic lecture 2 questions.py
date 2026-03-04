@@ -1391,3 +1391,10 @@ def retry(times):
 @retry(times=3)
 def unstable_api():
     raise ConnectionError("Server down")
+
+import numpy as np
+
+arr = np.array([1, 2, 3, 4])
+# Vectorized operation: multiplies every element by 10 simultaneously
+result = arr * 10 
+print(result)
