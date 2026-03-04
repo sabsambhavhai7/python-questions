@@ -1410,3 +1410,9 @@ with open("data.pkl", "wb") as f:
 # Load from file
 with open("data.pkl", "rb") as f:
     loaded_data = pickle.load(f)
+
+import os
+
+db_password = os.getenv("DB_PASSWORD", "default_guest_password")
+if not db_password:
+    print("Warning: Security key not found!")
