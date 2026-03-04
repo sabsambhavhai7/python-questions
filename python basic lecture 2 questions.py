@@ -1429,3 +1429,9 @@ class MyClass:
 # Get all methods of the class
 methods = inspect.getmembers(MyClass, predicate=inspect.isfunction)
 print(methods)
+
+import os
+
+db_password = os.getenv("DB_PASSWORD", "default_guest_password")
+if not db_password:
+    print("Warning: Security key not found!")
