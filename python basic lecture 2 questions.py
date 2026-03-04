@@ -1350,3 +1350,19 @@ def _(value):
 
 report(5)       # Triggers integer version
 report([1,2,3]) # Triggers list version
+
+import os
+from contextlib import contextmanager
+
+@contextmanager
+def working_directory(path):
+    old_dir = os.getcwd()
+    os.chdir(path)
+    try:
+        yield
+    finally:
+        os.chdir(old_dir)
+
+with working_directory("/tmp"):
+    # Do something in /tmp
+    print(f"Current dir: {os.getcwd()}")
