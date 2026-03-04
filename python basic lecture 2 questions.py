@@ -1372,3 +1372,22 @@ class Point:
     def __init__(self, x, y):
         self.x = x
         self.y = y
+
+import time
+
+def retry(times):
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            for i in range(times):
+                try:
+                    return func(*args, **kwargs)
+                except Exception as e:
+                    print(f"Attempt {i+1} failed. Retrying...")
+                    time.sleep(1)
+            return func(*args, **kwargs)
+        return wrapper
+    return decorator
+
+@retry(times=3)
+def unstable_api():
+    raise ConnectionError("Server down")
