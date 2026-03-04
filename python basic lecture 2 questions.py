@@ -1366,3 +1366,9 @@ def working_directory(path):
 with working_directory("/tmp"):
     # Do something in /tmp
     print(f"Current dir: {os.getcwd()}")
+
+class Point:
+    __slots__ = ('x', 'y') # No __dict__ created for these instances
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
