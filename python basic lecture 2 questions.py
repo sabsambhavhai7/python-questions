@@ -1419,3 +1419,13 @@ if not db_password:
 
 # Run this in your terminal/command prompt
 python -m http.server 8000
+
+
+import inspect
+
+class MyClass:
+    def secret_method(self): pass
+
+# Get all methods of the class
+methods = inspect.getmembers(MyClass, predicate=inspect.isfunction)
+print(methods)
