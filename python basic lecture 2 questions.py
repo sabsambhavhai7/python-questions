@@ -1497,3 +1497,7 @@ import time
 print("Starting...")
 time.sleep(2) # Pauses for 2 seconds
 print("Done!")
+
+stats = [True, True, False]
+print(any(stats)) # True (at least one is True)
+print(all(stats)) # False (not all are True)
