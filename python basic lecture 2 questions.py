@@ -1482,3 +1482,8 @@ class Dog:
 
 my_dog = Dog("Buddy")
 print(my_dog.bark())
+
+user = {"name": "Alex"}
+# Returns 'Guest' because 'email' isn't in the dict
+email = user.get("email", "Guest") 
+print(email)
