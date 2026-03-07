@@ -1487,3 +1487,7 @@ user = {"name": "Alex"}
 # Returns 'Guest' because 'email' isn't in the dict
 email = user.get("email", "Guest") 
 print(email)
+
+text = "Python"
+print(text[:2])   # Py (First two)
+print(text[::-1]) # nohtyP (Reversed)
