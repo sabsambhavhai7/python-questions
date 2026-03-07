@@ -1447,3 +1447,12 @@ def fetch(url):
 with ThreadPoolExecutor(max_workers=5) as executor:
     results = list(executor.map(fetch, urls))
 print(results)
+
+# Writing to a file
+with open("note.txt", "w") as f:
+    f.write("Hello from Python!")
+
+# Reading from a file
+with open("note.txt", "r") as f:
+    content = f.read()
+    print(content)
