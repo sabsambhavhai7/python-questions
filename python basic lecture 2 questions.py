@@ -1460,3 +1460,6 @@ with open("note.txt", "r") as f:
 tasks = ["Clean", "Code", "Sleep"]
 for index, task in enumerate(tasks, start=1):
     print(f"{index}. {task}")
+
+multiply = lambda x, y: x * y
+print(multiply(5, 6)) # Outputs: 30
