@@ -1491,3 +1491,9 @@ print(email)
 text = "Python"
 print(text[:2])   # Py (First two)
 print(text[::-1]) # nohtyP (Reversed)
+
+import time
+
+print("Starting...")
+time.sleep(2) # Pauses for 2 seconds
+print("Done!")
