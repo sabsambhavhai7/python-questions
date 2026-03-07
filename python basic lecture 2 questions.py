@@ -1456,3 +1456,7 @@ with open("note.txt", "w") as f:
 with open("note.txt", "r") as f:
     content = f.read()
     print(content)
+
+tasks = ["Clean", "Code", "Sleep"]
+for index, task in enumerate(tasks, start=1):
+    print(f"{index}. {task}")
