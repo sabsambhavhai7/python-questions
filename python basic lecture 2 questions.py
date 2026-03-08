@@ -1525,3 +1525,16 @@ data = [(1, 'bread'), (3, 'apple'), (2, 'cheese')]
 # Sort by the second element in the tuple (the name)
 data.sort(key=lambda x: x[1])
 print(data)
+
+def timer_decorator(func):
+    def wrapper():
+        print("Starting task...")
+        func()
+        print("Task finished.")
+    return wrapper
+
+@timer_decorator
+def run_process():
+    print("Processing data...")
+
+run_process()
