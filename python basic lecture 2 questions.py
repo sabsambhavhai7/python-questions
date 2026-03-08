@@ -1520,3 +1520,8 @@ url = "https://www.google.com"
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
 print(soup.title.string)
+
+data = [(1, 'bread'), (3, 'apple'), (2, 'cheese')]
+# Sort by the second element in the tuple (the name)
+data.sort(key=lambda x: x[1])
+print(data)
