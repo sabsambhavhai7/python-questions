@@ -1538,3 +1538,9 @@ def run_process():
     print("Processing data...")
 
 run_process()
+
+import requests
+
+response = requests.get("https://jsonplaceholder.typicode.com/todos/1")
+data = response.json()
+print(f"Task Title: {data['title']}")
