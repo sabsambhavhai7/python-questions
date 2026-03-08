@@ -1557,3 +1557,9 @@ def make_pizza(size, *toppings):
         print(f"- {topping}")
 
 make_pizza(12, "mushrooms", "peppers", "extra cheese")
+
+import re
+
+text = "Contact us at support@example.com or sales@biz.org"
+emails = re.findall(r"[\w\.-]+@[\w\.-]+", text)
+print(emails)
