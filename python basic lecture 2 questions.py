@@ -1563,3 +1563,14 @@ import re
 text = "Contact us at support@example.com or sales@biz.org"
 emails = re.findall(r"[\w\.-]+@[\w\.-]+", text)
 print(emails)
+
+class Robot:
+    def __init__(self, name, version):
+        self.name = name
+        self.version = version
+
+    def greet(self):
+        return f"System Online. I am {self.name} v{self.version}."
+
+bot = Robot("Gemini-Bot", 3.0)
+print(bot.greet())
