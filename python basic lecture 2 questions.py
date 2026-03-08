@@ -1544,3 +1544,9 @@ import requests
 response = requests.get("https://jsonplaceholder.typicode.com/todos/1")
 data = response.json()
 print(f"Task Title: {data['title']}")
+
+# Use parentheses instead of brackets
+squares_gen = (x**2 for x in range(1000000))
+
+print(next(squares_gen)) # 0
+print(next(squares_gen)) # 1
