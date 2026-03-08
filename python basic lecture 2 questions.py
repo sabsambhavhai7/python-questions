@@ -1512,3 +1512,11 @@ scores = [85, 92, 78]
 
 for name, score in zip(names, scores):
     print(f"{name} scored {score}")
+
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://www.google.com"
+response = requests.get(url)
+soup = BeautifulSoup(response.text, 'html.parser')
+print(soup.title.string)
