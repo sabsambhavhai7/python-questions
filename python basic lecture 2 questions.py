@@ -1550,3 +1550,10 @@ squares_gen = (x**2 for x in range(1000000))
 
 print(next(squares_gen)) # 0
 print(next(squares_gen)) # 1
+
+def make_pizza(size, *toppings):
+    print(f"Making a {size} inch pizza with:")
+    for topping in toppings:
+        print(f"- {topping}")
+
+make_pizza(12, "mushrooms", "peppers", "extra cheese")
