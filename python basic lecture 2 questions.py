@@ -1501,3 +1501,8 @@ print("Done!")
 stats = [True, True, False]
 print(any(stats)) # True (at least one is True)
 print(all(stats)) # False (not all are True)
+
+prices = {'apple': 1.0, 'banana': 0.5, 'cherry': 2.5}
+# Increase all prices by 10%
+expensive_prices = {k: v * 1.1 for k, v in prices.items() if v > 0.5}
+print(expensive_prices)
