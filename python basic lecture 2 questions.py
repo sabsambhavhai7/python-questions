@@ -1617,3 +1617,9 @@ print(f"The winner is: {winner}")
 with open("test.txt", "r") as file:
     content = file.read()
     print(content)
+
+import random
+
+friends = ["Alice", "Bob", "Charlie", "Diana"]
+winner = random.choice(friends)
+print(f"The winner is: {winner}")
