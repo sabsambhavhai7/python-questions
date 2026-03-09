@@ -1588,3 +1588,7 @@ print(squares) # [0, 4, 16, 36, 64]
 text = "Python"
 reversed_text = text[::-1]
 print(reversed_text) # nohtyP
+
+word = "racecar"
+is_palindrome = word == word[::-1]
+print(is_palindrome) # True
