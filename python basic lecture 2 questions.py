@@ -1576,3 +1576,7 @@ bot = Robot("Gemini-Bot", 3.0)
 print(bot.greet())
 
 print("Hello, World!")
+
+a, b = 5, 10
+a, b = b, a
+print(f"a: {a}, b: {b}") # a: 10, b: 5
