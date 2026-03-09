@@ -1580,3 +1580,7 @@ print("Hello, World!")
 a, b = 5, 10
 a, b = b, a
 print(f"a: {a}, b: {b}") # a: 10, b: 5
+
+
+squares = [x**2 for x in range(10) if x % 2 == 0]
+print(squares) # [0, 4, 16, 36, 64]
