@@ -1592,3 +1592,8 @@ print(reversed_text) # nohtyP
 word = "racecar"
 is_palindrome = word == word[::-1]
 print(is_palindrome) # True
+
+dict1 = {"a": 1, "b": 2}
+dict2 = {"c": 3, "d": 4}
+merged = dict1 | dict2
+print(merged) # {'a': 1, 'b': 2, 'c': 3, 'd': 4}
