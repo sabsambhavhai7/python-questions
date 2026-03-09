@@ -1597,3 +1597,12 @@ dict1 = {"a": 1, "b": 2}
 dict2 = {"c": 3, "d": 4}
 merged = dict1 | dict2
 print(merged) # {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+
+import time
+
+start_time = time.time()
+# Add the code you want to measure here
+time.sleep(1) 
+end_time = time.time()
+
+print(f"Execution time: {end_time - start_time} seconds")
