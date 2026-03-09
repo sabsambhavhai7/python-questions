@@ -1606,3 +1606,9 @@ time.sleep(1)
 end_time = time.time()
 
 print(f"Execution time: {end_time - start_time} seconds")
+
+import random
+
+friends = ["Alice", "Bob", "Charlie", "Diana"]
+winner = random.choice(friends)
+print(f"The winner is: {winner}")
