@@ -1574,3 +1574,5 @@ class Robot:
 
 bot = Robot("Gemini-Bot", 3.0)
 print(bot.greet())
+
+print("Hello, World!")
