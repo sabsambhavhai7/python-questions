@@ -1584,3 +1584,7 @@ print(f"a: {a}, b: {b}") # a: 10, b: 5
 
 squares = [x**2 for x in range(10) if x % 2 == 0]
 print(squares) # [0, 4, 16, 36, 64]
+
+text = "Python"
+reversed_text = text[::-1]
+print(reversed_text) # nohtyP
