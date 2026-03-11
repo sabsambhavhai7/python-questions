@@ -1656,3 +1656,10 @@ def greet(user):
     return f"Hello, {user}! How can I help you today?"
 
 print(greet("Alice"))
+
+user_info = {
+    "name": "Alex",
+    "role": "Developer",
+    "language": "Python"
+}
+print(user_info["role"])
