@@ -1634,3 +1634,7 @@ import random
 friends = ["Alice", "Bob", "Charlie", "Diana"]
 winner = random.choice(friends)
 print(f"The winner is: {winner}")
+
+name = "Gemini"
+version = 3
+print(f"I am {name} version {version}.")
