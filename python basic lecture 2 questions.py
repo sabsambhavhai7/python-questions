@@ -1645,3 +1645,9 @@ print(fruits[1])        # Outputs: banana (index starts at 0)
 
 for i in range(5):
     print(f"Number: {i}")
+
+age = 20
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
