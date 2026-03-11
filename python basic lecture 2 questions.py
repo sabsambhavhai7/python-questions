@@ -1677,3 +1677,8 @@ except ZeroDivisionError:
 with open("example.txt", "r") as file:
     content = file.read()
     print(content)
+
+# Assuming 'example.txt' exists in your folder
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
