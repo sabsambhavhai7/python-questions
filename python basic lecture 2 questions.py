@@ -1642,3 +1642,6 @@ print(f"I am {name} version {version}.")
 fruits = ["apple", "banana", "cherry"]
 fruits.append("orange") # Adds to the end
 print(fruits[1])        # Outputs: banana (index starts at 0)
+
+for i in range(5):
+    print(f"Number: {i}")
