@@ -1672,3 +1672,8 @@ try:
     result = 10 / 0
 except ZeroDivisionError:
     print("Oops! You can't divide by zero.")
+
+# Assuming 'example.txt' exists in your folder
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
