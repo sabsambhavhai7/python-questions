@@ -1691,3 +1691,8 @@ import json
 json_data = '{"name": "TechBot", "active": true}'
 data = json.loads(json_data)
 print(data["name"])
+
+from datetime import datetime
+
+now = datetime.now()
+print(now.strftime("%Y-%m-%d %H:%M:%S"))
