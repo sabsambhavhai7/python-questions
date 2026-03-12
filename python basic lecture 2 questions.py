@@ -1682,3 +1682,6 @@ with open("example.txt", "r") as file:
 with open("example.txt", "r") as file:
     content = file.read()
     print(content)
+
+multiply = lambda x, y: x * y
+print(multiply(5, 6)) # Outputs: 30
