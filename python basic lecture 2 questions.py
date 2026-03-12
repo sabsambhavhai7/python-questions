@@ -1745,3 +1745,13 @@ def add_all(*numbers):
     return sum(numbers)
 
 print(add_all(1, 2, 3, 4, 5)) # Outputs: 15
+
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+    def bark(self):
+        return f"{self.name} says woof!"
+
+my_dog = Dog("Buddy")
+print(my_dog.bark())
