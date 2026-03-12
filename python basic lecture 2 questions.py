@@ -1731,3 +1731,8 @@ print(my_dog.bark())
 nums = [1, 5, 10, 15, 20]
 large_nums = list(filter(lambda x: x > 10, nums))
 print(large_nums) # [15, 20]
+
+def add_all(*numbers):
+    return sum(numbers)
+
+print(add_all(1, 2, 3, 4, 5)) # Outputs: 15
