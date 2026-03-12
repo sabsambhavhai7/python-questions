@@ -1700,3 +1700,9 @@ print(now.strftime("%Y-%m-%d %H:%M:%S"))
 tasks = ["Code", "Eat", "Sleep"]
 for index, task in enumerate(tasks):
     print(f"{index + 1}: {task}")
+
+names = ["Alice", "Bob"]
+scores = [85, 92]
+
+for name, score in zip(names, scores):
+    print(f"{name} got a score of {score}")
