@@ -1712,3 +1712,8 @@ scores = [85, 92]
 
 for name, score in zip(names, scores):
     print(f"{name} got a score of {score}")
+
+count = 5
+while count > 0:
+    print(f"Countdown: {count}")
+    count -= 1
