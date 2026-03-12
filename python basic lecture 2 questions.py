@@ -1685,3 +1685,9 @@ with open("example.txt", "r") as file:
 
 multiply = lambda x, y: x * y
 print(multiply(5, 6)) # Outputs: 30
+
+import json
+
+json_data = '{"name": "TechBot", "active": true}'
+data = json.loads(json_data)
+print(data["name"])
