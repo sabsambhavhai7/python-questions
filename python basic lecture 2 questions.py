@@ -1696,3 +1696,7 @@ from datetime import datetime
 
 now = datetime.now()
 print(now.strftime("%Y-%m-%d %H:%M:%S"))
+
+tasks = ["Code", "Eat", "Sleep"]
+for index, task in enumerate(tasks):
+    print(f"{index + 1}: {task}")
