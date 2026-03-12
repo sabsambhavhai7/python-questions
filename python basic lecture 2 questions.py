@@ -1740,3 +1740,8 @@ print(add_all(1, 2, 3, 4, 5)) # Outputs: 15
 items = []
 if not items:
     print("The list is empty!")
+
+def add_all(*numbers):
+    return sum(numbers)
+
+print(add_all(1, 2, 3, 4, 5)) # Outputs: 15
