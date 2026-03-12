@@ -1727,3 +1727,7 @@ class Dog:
 
 my_dog = Dog("Buddy")
 print(my_dog.bark())
+
+nums = [1, 5, 10, 15, 20]
+large_nums = list(filter(lambda x: x > 10, nums))
+print(large_nums) # [15, 20]
