@@ -1803,3 +1803,12 @@ names = ["Alice", "Bob"]
 scores = [85, 92]
 combined = list(zip(names, scores))
 # Output: [('Alice', 85), ('Bob', 92)]
+
+from collections import defaultdict
+
+word_counts = defaultdict(int)
+words = ["apple", "banana", "apple"]
+
+for word in words:
+    word_counts[word] += 1
+# No need to check if "apple" exists in the dict first!
