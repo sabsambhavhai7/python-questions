@@ -1774,3 +1774,10 @@ def logger(func):
 @logger
 def add(a, b):
     return a + b
+
+def large_sequence(n):
+    for i in range(n):
+        yield i  # Yields one item at a time
+
+gen = large_sequence(1000000)
+print(next(gen)) # 0
