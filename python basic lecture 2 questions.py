@@ -1781,3 +1781,7 @@ def large_sequence(n):
 
 gen = large_sequence(1000000)
 print(next(gen)) # 0
+
+with open("data.txt", "w") as f:
+    f.write("Hello World")
+# File is automatically closed here
