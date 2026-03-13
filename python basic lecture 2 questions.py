@@ -1785,3 +1785,9 @@ print(next(gen)) # 0
 with open("data.txt", "w") as f:
     f.write("Hello World")
 # File is automatically closed here
+
+def flexible_func(*args, **kwargs):
+    print(args)    # A tuple of positional arguments
+    print(kwargs)  # A dictionary of keyword arguments
+
+flexible_func(1, 2, 3, name="Gemini", task="Coding")
