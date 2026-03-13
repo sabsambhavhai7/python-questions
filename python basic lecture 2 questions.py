@@ -1791,3 +1791,7 @@ def flexible_func(*args, **kwargs):
     print(kwargs)  # A dictionary of keyword arguments
 
 flexible_func(1, 2, 3, name="Gemini", task="Coding")
+
+nums = [1, 2, 3, 4]
+# Double every number
+doubled = list(map(lambda x: x * 2, nums))
