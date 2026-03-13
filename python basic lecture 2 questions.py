@@ -1760,3 +1760,7 @@ print(my_dog.bark())
 numbers = range(10)
 squares = [x**2 for x in numbers if x % 2 == 0]
 # Output: [0, 4, 16, 36, 64]
+
+users = [("Alice", 25), ("Bob", 30)]
+user_map = {name: age for name, age in users}
+# Output: {'Alice': 25, 'Bob': 30}
