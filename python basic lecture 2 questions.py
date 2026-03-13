@@ -1755,3 +1755,8 @@ class Dog:
 
 my_dog = Dog("Buddy")
 print(my_dog.bark())
+
+# Get squares of even numbers only
+numbers = range(10)
+squares = [x**2 for x in numbers if x % 2 == 0]
+# Output: [0, 4, 16, 36, 64]
