@@ -1764,3 +1764,13 @@ squares = [x**2 for x in numbers if x % 2 == 0]
 users = [("Alice", 25), ("Bob", 30)]
 user_map = {name: age for name, age in users}
 # Output: {'Alice': 25, 'Bob': 30}
+
+def logger(func):
+    def wrapper(*args, **kwargs):
+        print(f"Running {func.__name__}...")
+        return func(*args, **kwargs)
+    return wrapper
+
+@logger
+def add(a, b):
+    return a + b
