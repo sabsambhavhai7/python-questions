@@ -1795,3 +1795,6 @@ flexible_func(1, 2, 3, name="Gemini", task="Coding")
 nums = [1, 2, 3, 4]
 # Double every number
 doubled = list(map(lambda x: x * 2, nums))
+
+price = 49.99
+print(f"The total is ${price * 1.05:.2f}") # Math and rounding in one line
