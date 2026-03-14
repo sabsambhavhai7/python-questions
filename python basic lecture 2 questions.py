@@ -1834,3 +1834,7 @@ def greet(name):
     print(f"Hi {name}!")
 
 greet("Alex")
+
+with open("data.txt", "w") as f:
+    f.write("Safe file handling!")
+# File closes automatically here
