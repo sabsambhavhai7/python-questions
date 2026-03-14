@@ -1843,3 +1843,14 @@ data = [{"name": "Max", "age": 25}, {"name": "Lia", "age": 22}]
 # Sort by age
 sorted_data = sorted(data, key=lambda x: x['age'])
 print(sorted_data)
+
+          class Animal:
+    def speak(self):
+        pass
+
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
+
+my_dog = Dog()
+print(my_dog.speak())
