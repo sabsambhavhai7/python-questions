@@ -1870,3 +1870,9 @@ def make_pizza(size, *toppings, **details):
         print("Out for delivery!")
 
 make_pizza("Large", "Pepperoni", "Mushrooms", delivery=True)
+
+
+def process_score(name: str, score: int) -> str:
+    return f"{name} scored {score}%"
+
+print(process_score("Sam", 95))
