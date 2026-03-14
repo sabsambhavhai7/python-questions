@@ -1821,3 +1821,16 @@ print(even_squares) # [4, 16, 36, 64, 100]
 users = [("ID01", "Alice"), ("ID02", "Bob")]
 user_map = {uid: name for uid, name in users}
 print(user_map) # {'ID01': 'Alice', 'ID02': 'Bob'}
+
+
+def simple_logger(func):
+    def wrapper(*args, **kwargs):
+        print(f"Calling {func.__name__}...")
+        return func(*args, **kwargs)
+    return wrapper
+
+@simple_logger
+def greet(name):
+    print(f"Hi {name}!")
+
+greet("Alex")
