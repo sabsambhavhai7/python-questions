@@ -1863,3 +1863,10 @@ except ValueError:
     print("That's not a number!")
 except ZeroDivisionError:
     print("Can't divide by zero.")
+
+def make_pizza(size, *toppings, **details):
+    print(f"Making a {size} pizza with {toppings}")
+    if details.get("delivery"):
+        print("Out for delivery!")
+
+make_pizza("Large", "Pepperoni", "Mushrooms", delivery=True)
