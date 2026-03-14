@@ -1838,3 +1838,8 @@ greet("Alex")
 with open("data.txt", "w") as f:
     f.write("Safe file handling!")
 # File closes automatically here
+
+data = [{"name": "Max", "age": 25}, {"name": "Lia", "age": 22}]
+# Sort by age
+sorted_data = sorted(data, key=lambda x: x['age'])
+print(sorted_data)
