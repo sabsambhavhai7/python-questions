@@ -1876,3 +1876,11 @@ def process_score(name: str, score: int) -> str:
     return f"{name} scored {score}%"
 
 print(process_score("Sam", 95))
+
+
+def make_pizza(size, *toppings, **details):
+    print(f"Making a {size} pizza with {toppings}")
+    if details.get("delivery"):
+        print("Out for delivery!")
+
+make_pizza("Large", "Pepperoni", "Mushrooms", delivery=True)
