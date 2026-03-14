@@ -1854,3 +1854,12 @@ class Dog(Animal):
 
 my_dog = Dog()
 print(my_dog.speak())
+
+
+try:
+    val = int(input("Enter a number: "))
+    result = 10 / val
+except ValueError:
+    print("That's not a number!")
+except ZeroDivisionError:
+    print("Can't divide by zero.")
