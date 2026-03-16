@@ -1907,3 +1907,8 @@ users = [
 
 # Sort by score descending
 sorted_users = sorted(users, key=lambda x: x['score'], reverse=True)
+
+# Goal: Swap keys and values
+original = {"apple": 5, "banana": 2, "orange": 8}
+swapped = {value: key for key, value in original.items()}
+# Result: {5: 'apple', 2: 'banana', 8: 'orange'}
