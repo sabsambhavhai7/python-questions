@@ -1920,3 +1920,10 @@ reversed_text = text[::-1] # "nohtyP"
 with open("data.txt", "w") as f:
     f.write("Hello, World!")
 # File automatically closes here
+
+
+names = ["Alice", "Bob", "Charlie"]
+scores = [85, 92, 78]
+
+for name, score in zip(names, scores):
+    print(f"{name} scored {score}")
