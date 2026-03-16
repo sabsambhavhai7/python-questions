@@ -1927,3 +1927,10 @@ scores = [85, 92, 78]
 
 for name, score in zip(names, scores):
     print(f"{name} scored {score}")
+
+def make_order(item, *extras, **details):
+    print(f"Item: {item}")
+    print(f"Extras: {extras}")
+    print(f"Details: {details}")
+
+make_order("Pizza", "Olives", "Cheese", delivery=True, tip=5)
