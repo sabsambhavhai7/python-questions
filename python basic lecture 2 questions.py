@@ -1938,3 +1938,16 @@ make_order("Pizza", "Olives", "Cheese", delivery=True, tip=5)
 items = [1, 2, 2, 3, 4, 4, 4, 5]
 unique_items = list(set(items))
 # Result: [1, 2, 3, 4, 5]
+
+def simple_logger(func):
+    def wrapper():
+        print("Function is starting...")
+        func()
+        print("Function finished.")
+    return wrapper
+
+@simple_logger
+def say_hi():
+    print("Hi!")
+
+say_hi()
