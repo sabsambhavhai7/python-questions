@@ -1898,3 +1898,12 @@ defaults = {"age": 18, "city": "Unknown", "theme": "dark"}
 # Merge (profile overrides defaults)
 user_settings = defaults | profile
 # Result: {'age': 25, 'city': 'Unknown', 'theme': 'dark', 'name': 'Alex'}
+
+users = [
+    {"name": "B", "score": 90},
+    {"name": "A", "score": 100},
+    {"name": "C", "score": 85}
+]
+
+# Sort by score descending
+sorted_users = sorted(users, key=lambda x: x['score'], reverse=True)
