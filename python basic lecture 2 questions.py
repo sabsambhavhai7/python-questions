@@ -1890,3 +1890,11 @@ make_pizza("Large", "Pepperoni", "Mushrooms", delivery=True)
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 even_squares = [x**2 for x in numbers if x % 2 == 0]
 # Result: [4, 16, 36, 64, 100]
+
+
+profile = {"name": "Alex", "age": 25}
+defaults = {"age": 18, "city": "Unknown", "theme": "dark"}
+
+# Merge (profile overrides defaults)
+user_settings = defaults | profile
+# Result: {'age': 25, 'city': 'Unknown', 'theme': 'dark', 'name': 'Alex'}
