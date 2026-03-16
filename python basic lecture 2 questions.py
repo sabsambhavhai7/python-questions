@@ -1884,3 +1884,9 @@ def make_pizza(size, *toppings, **details):
         print("Out for delivery!")
 
 make_pizza("Large", "Pepperoni", "Mushrooms", delivery=True)
+
+
+# Goal: Get squares of even numbers only
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_squares = [x**2 for x in numbers if x % 2 == 0]
+# Result: [4, 16, 36, 64, 100]
