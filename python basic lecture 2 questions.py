@@ -1915,3 +1915,8 @@ swapped = {value: key for key, value in original.items()}
 
 text = "Python"
 reversed_text = text[::-1] # "nohtyP"
+
+
+with open("data.txt", "w") as f:
+    f.write("Hello, World!")
+# File automatically closes here
