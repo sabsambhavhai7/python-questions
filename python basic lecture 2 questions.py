@@ -1951,3 +1951,16 @@ def say_hi():
     print("Hi!")
 
 say_hi()
+
+def simple_logger(func):
+    def wrapper():
+        print("Function is starting...")
+        func()
+        print("Function finished.")
+    return wrapper
+
+@simple_logger
+def say_hi():
+    print("Hi!")
+
+say_hi()
