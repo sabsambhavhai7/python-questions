@@ -1991,3 +1991,15 @@ print(score_card) # Output: {'Alice': 85, 'Bob': 92, 'Charlie': 78}
 prices = {"apple": 1.00, "bread": 2.50, "milk": 3.00}
 tax_inclusive = {item: price * 1.1 for item, price in prices.items()}
 print(tax_inclusive)
+
+
+class Animal:
+    def speak(self):
+        print("Animal makes a sound")
+
+class Dog(Animal): # Inheriting from Animal
+    def speak(self):
+        print("Woof!")
+
+my_dog = Dog()
+my_dog.speak()
