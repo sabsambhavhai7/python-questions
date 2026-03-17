@@ -2030,3 +2030,14 @@ with open("test.txt", "w") as file:
 
 with open("test.txt", "r") as file:
     print(file.read())
+
+
+import secrets
+import string
+
+def generate_secure_password(length=12):
+    alphabet = string.ascii_letters + string.digits + string.punctuation
+    password = ''.join(secrets.choice(alphabet) for _ in range(length))
+    return password
+
+print(f"Secure Password: {generate_secure_password()}")
