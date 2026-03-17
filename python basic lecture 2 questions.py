@@ -2010,3 +2010,10 @@ class Dog(Animal): # Inheriting from Animal
 
 my_dog = Dog()
 my_dog.speak()
+
+def make_order(item, *extras, **details):
+    print(f"Order: {item}")
+    print(f"Extras: {extras}")
+    print(f"Details: {details}")
+
+make_order("Pizza", "Olives", "Cheese", table=5, notes="Extra spicy")
