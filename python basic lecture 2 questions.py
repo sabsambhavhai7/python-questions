@@ -1997,6 +1997,13 @@ class Animal:
     def speak(self):
         print("Animal makes a sound")
 
+def make_order(item, *extras, **details):
+    print(f"Order: {item}")
+    print(f"Extras: {extras}")
+    print(f"Details: {details}")
+
+make_order("Pizza", "Olives", "Cheese", table=5, notes="Extra spicy")
+
 class Dog(Animal): # Inheriting from Animal
     def speak(self):
         print("Woof!")
