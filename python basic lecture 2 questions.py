@@ -1979,3 +1979,10 @@ except ZeroDivisionError:
     print("Error: Cannot divide by zero.")
 finally:
     print("Execution complete.")
+
+names = ["Alice", "Bob", "Charlie"]
+scores = [85, 92, 78]
+
+# Merging into a dictionary
+score_card = dict(zip(names, scores))
+print(score_card) # Output: {'Alice': 85, 'Bob': 92, 'Charlie': 78}
