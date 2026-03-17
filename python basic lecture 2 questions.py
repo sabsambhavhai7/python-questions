@@ -2023,3 +2023,10 @@ temps_c = [0, 20, 35, 100]
 # Convert Celsius to Fahrenheit
 temps_f = list(map(lambda c: (c * 9/5) + 32, temps_c))
 print(temps_f) # Output: [32.0, 68.0, 95.0, 212.0]
+
+# Writing and reading a file
+with open("test.txt", "w") as file:
+    file.write("Python is versatile.")
+
+with open("test.txt", "r") as file:
+    print(file.read())
