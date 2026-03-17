@@ -1986,3 +1986,8 @@ scores = [85, 92, 78]
 # Merging into a dictionary
 score_card = dict(zip(names, scores))
 print(score_card) # Output: {'Alice': 85, 'Bob': 92, 'Charlie': 78}
+
+# Goal: Create a dictionary of prices with a 10% tax added
+prices = {"apple": 1.00, "bread": 2.50, "milk": 3.00}
+tax_inclusive = {item: price * 1.1 for item, price in prices.items()}
+print(tax_inclusive)
