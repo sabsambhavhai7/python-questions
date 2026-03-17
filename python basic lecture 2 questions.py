@@ -2060,3 +2060,14 @@ if response.status_code == 200:
     print(f"Title: {data['title']}")
 else:
     print("Failed to retrieve data.")
+
+
+import secrets
+import string
+
+def generate_secure_password(length=12):
+    alphabet = string.ascii_letters + string.digits + string.punctuation
+    password = ''.join(secrets.choice(alphabet) for _ in range(length))
+    return password
+
+print(f"Secure Password: {generate_secure_password()}")
