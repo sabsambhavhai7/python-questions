@@ -1969,3 +1969,13 @@ say_hi()
 numbers = range(10)
 squares = [x**2 for x in numbers if x % 2 == 0]
 print(squares)  # Output: [0, 4, 16, 36, 64]
+
+try:
+    num = int(input("Enter a divisor: "))
+    result = 10 / num
+except ValueError:
+    print("Error: Please enter a valid integer.")
+except ZeroDivisionError:
+    print("Error: Cannot divide by zero.")
+finally:
+    print("Execution complete.")
