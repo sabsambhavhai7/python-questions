@@ -2051,3 +2051,12 @@ if response.status_code == 200:
     print(f"Title: {data['title']}")
 else:
     print("Failed to retrieve data.")
+
+import requests
+
+response = requests.get("https://jsonplaceholder.typicode.com/posts/1")
+if response.status_code == 200:
+    data = response.json()
+    print(f"Title: {data['title']}")
+else:
+    print("Failed to retrieve data.")
