@@ -2111,3 +2111,14 @@ print(my_dog.bark())
 nums = [0, 10, 20, 30, 40, 50]
 print(nums[1:4])   # [10, 20, 30]
 print(nums[::-1])  # Reverses the list: [50, 40, 30, 20, 10, 0]
+
+
+def count_up_to(n):
+    count = 1
+    while count <= n:
+        yield count
+        count += 1
+
+counter = count_up_to(5)
+for num in counter:
+    print(num)
