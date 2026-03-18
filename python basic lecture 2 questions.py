@@ -2179,3 +2179,15 @@ import json
 data = '{"name": "Gemini", "role": "AI", "version": 3.0}'
 parsed = json.loads(data)
 print(parsed["role"]) # Output: AI
+
+
+class Dog:
+    def __init__(self, name, breed):
+        self.name = name
+        self.breed = breed
+
+    def bark(self):
+        return f"{self.name} says Woof!"
+
+my_dog = Dog("Rex", "German Shepherd")
+print(my_dog.bark())
