@@ -1980,6 +1980,21 @@ except ZeroDivisionError:
 finally:
     print("Execution complete.")
 
+for word in words:
+    word_counts[word] += 1
+# No need to check if "apple" exists in the dict first!
+
+# Create a list of squares for even numbers only
+numbers = range(1, 11)
+even_squares = [x**2 for x in numbers if x % 2 == 0]
+print(even_squares) # [4, 16, 36, 64, 100]
+
+users = [("ID01", "Alice"), ("ID02", "Bob")]
+user_map = {uid: name for uid, name in users}
+print(user_map) # {'ID01': 'Alice', 'ID02': 'Bob'}
+
+
+
 names = ["Alice", "Bob", "Charlie"]
 scores = [85, 92, 78]
 
