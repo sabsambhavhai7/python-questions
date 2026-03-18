@@ -2145,3 +2145,10 @@ keys = ["name", "age", "job"]
 values = ["Leo", 28, "Developer"]
 user_info = dict(zip(keys, values))
 print(user_info)
+
+
+import re
+
+text = "Contact me at hello@example.com"
+email = re.search(r'[\w\.-]+@[\w\.-]+', text)
+print(email.group()) # Output: hello@example.com
