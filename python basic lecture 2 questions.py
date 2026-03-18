@@ -2122,3 +2122,17 @@ def count_up_to(n):
 counter = count_up_to(5)
 for num in counter:
     print(num)
+
+
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function.")
+        func()
+        print("Something is happening after.")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()
