@@ -2140,3 +2140,8 @@ say_hello()
 names = ["Alice", "Bob", "Charlie"]
 name_lengths = {name: len(name) for name in names}
 print(name_lengths) # {'Alice': 5, 'Bob': 3, 'Charlie': 7}
+
+keys = ["name", "age", "job"]
+values = ["Leo", 28, "Developer"]
+user_info = dict(zip(keys, values))
+print(user_info)
