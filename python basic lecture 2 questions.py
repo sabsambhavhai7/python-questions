@@ -2088,3 +2088,9 @@ make_order("Pizza", "Olives", "Cheese", table=5, notes="Extra spicy")
 
 multiply = lambda x, y: x * y
 print(multiply(5, 6)) # Output: 30
+
+import json
+
+data = '{"name": "Gemini", "role": "AI", "version": 3.0}'
+parsed = json.loads(data)
+print(parsed["role"]) # Output: AI
