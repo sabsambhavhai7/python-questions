@@ -2084,3 +2084,7 @@ def make_order(item, *extras, **details):
     print(f"Details: {details}")
 
 make_order("Pizza", "Olives", "Cheese", table=5, notes="Extra spicy")
+
+
+multiply = lambda x, y: x * y
+print(multiply(5, 6)) # Output: 30
