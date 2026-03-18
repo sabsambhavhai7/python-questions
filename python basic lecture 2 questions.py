@@ -2136,3 +2136,7 @@ def say_hello():
     print("Hello!")
 
 say_hello()
+
+names = ["Alice", "Bob", "Charlie"]
+name_lengths = {name: len(name) for name in names}
+print(name_lengths) # {'Alice': 5, 'Bob': 3, 'Charlie': 7}
