@@ -2152,3 +2152,10 @@ import re
 text = "Contact me at hello@example.com"
 email = re.search(r'[\w\.-]+@[\w\.-]+', text)
 print(email.group()) # Output: hello@example.com
+
+
+def flexible_func(*args, **kwargs):
+    print(f"Positional: {args}")
+    print(f"Keyword: {kwargs}")
+
+flexible_func(1, 2, 3, status="active", level="medium")
