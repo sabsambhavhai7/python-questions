@@ -2174,3 +2174,8 @@ def flexible_func(*args, **kwargs):
 
 flexible_func(1, 2, 3, status="active", level="medium")
  
+import json
+
+data = '{"name": "Gemini", "role": "AI", "version": 3.0}'
+parsed = json.loads(data)
+print(parsed["role"]) # Output: AI
