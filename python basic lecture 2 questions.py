@@ -2106,3 +2106,8 @@ class Dog:
 
 my_dog = Dog("Rex", "German Shepherd")
 print(my_dog.bark())
+
+
+nums = [0, 10, 20, 30, 40, 50]
+print(nums[1:4])   # [10, 20, 30]
+print(nums[::-1])  # Reverses the list: [50, 40, 30, 20, 10, 0]
