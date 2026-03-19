@@ -2242,3 +2242,10 @@ def make_sandwich(*ingredients, **extras):
         print(f"- Adding {item}")
 
 make_sandwich("Turkey", "Swiss", "Tomato", bread="Sourdough")
+
+
+from collections import Counter
+
+data = ["apple", "blue", "apple", "red", "blue", "apple"]
+count = Counter(data)
+print(count.most_common(1)) # [('apple', 3)]
