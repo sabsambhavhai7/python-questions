@@ -2249,3 +2249,8 @@ from collections import Counter
 data = ["apple", "blue", "apple", "red", "blue", "apple"]
 count = Counter(data)
 print(count.most_common(1)) # [('apple', 3)]
+
+
+matrix = [[1, 2], [3, 4], [5, 6]]
+flat = [num for row in matrix for num in row]
+print(flat) # [1, 2, 3, 4, 5, 6]
