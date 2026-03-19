@@ -2282,3 +2282,14 @@ class Product:
 
 p1 = Product("Laptop", 1200.0, 5)
 print(p1) # Product(name='Laptop', price=1200.0, quantity=5)
+
+
+users = [
+    {"name": "Zane", "age": 30},
+    {"name": "Abby", "age": 22},
+    {"name": "Mark", "age": 25}
+]
+
+# Sort by age
+sorted_users = sorted(users, key=lambda x: x['age'])
+print(sorted_users)
