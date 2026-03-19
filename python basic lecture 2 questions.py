@@ -2254,3 +2254,13 @@ print(count.most_common(1)) # [('apple', 3)]
 matrix = [[1, 2], [3, 4], [5, 6]]
 flat = [num for row in matrix for num in row]
 print(flat) # [1, 2, 3, 4, 5, 6]
+
+
+from concurrent.futures import ThreadPoolExecutor
+
+def fetch_task(n):
+    return f"Task {n} complete"
+
+with ThreadPoolExecutor(max_workers=3) as executor:
+    results = list(executor.map(fetch_task, range(5)))
+    print(results)
