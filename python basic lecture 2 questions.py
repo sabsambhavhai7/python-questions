@@ -2222,3 +2222,15 @@ def fibonacci_sequence(limit):
 
 for num in fibonacci_sequence(10):
     print(num)
+
+
+from contextlib import contextmanager
+
+@contextmanager
+def simple_resource():
+    print("--- Opening Resource ---")
+    yield "Data Stream"
+    print("--- Closing Resource ---")
+
+with simple_resource() as r:
+    print(f"Working with: {r}")
