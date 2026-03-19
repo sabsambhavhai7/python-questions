@@ -2195,3 +2195,20 @@ print(my_dog.bark())
 names = ["Alice", "Bob", "Charlie"]
 name_lengths = {name: len(name) for name in names}
 print(name_lengths) # {'Alice': 5, 'Bob': 3, 'Charlie': 7}
+
+
+import time
+
+def timer_decorator(func):
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)
+        print(f"{func.__name__} took {time.time() - start:.4f} seconds")
+        return result
+    return wrapper
+
+@timer_decorator
+def heavy_computation():
+    return sum(i**2 for i in range(10**6))
+
+heavy_computation()
