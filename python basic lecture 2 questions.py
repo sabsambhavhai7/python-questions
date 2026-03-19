@@ -2264,3 +2264,10 @@ def fetch_task(n):
 with ThreadPoolExecutor(max_workers=3) as executor:
     results = list(executor.map(fetch_task, range(5)))
     print(results)
+
+
+names = ["Alice", "Bob", "Charlie"]
+scores = [85, 92, 78]
+
+for i, (name, score) in enumerate(zip(names, scores)):
+    print(f"{i+1}. {name}: {score}")
