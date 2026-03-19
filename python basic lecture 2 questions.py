@@ -2212,3 +2212,13 @@ def heavy_computation():
     return sum(i**2 for i in range(10**6))
 
 heavy_computation()
+
+
+def fibonacci_sequence(limit):
+    a, b = 0, 1
+    for _ in range(limit):
+        yield a
+        a, b = b, a + b
+
+for num in fibonacci_sequence(10):
+    print(num)
