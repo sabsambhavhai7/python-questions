@@ -2234,3 +2234,11 @@ def simple_resource():
 
 with simple_resource() as r:
     print(f"Working with: {r}")
+
+
+def make_sandwich(*ingredients, **extras):
+    print(f"Bread: {extras.get('bread', 'Wheat')}")
+    for item in ingredients:
+        print(f"- Adding {item}")
+
+make_sandwich("Turkey", "Swiss", "Tomato", bread="Sourdough")
