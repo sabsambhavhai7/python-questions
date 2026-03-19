@@ -2271,3 +2271,14 @@ scores = [85, 92, 78]
 
 for i, (name, score) in enumerate(zip(names, scores)):
     print(f"{i+1}. {name}: {score}")
+
+from dataclasses import dataclass
+
+@dataclass
+class Product:
+    name: str
+    price: float
+    quantity: int = 0
+
+p1 = Product("Laptop", 1200.0, 5)
+print(p1) # Product(name='Laptop', price=1200.0, quantity=5)
