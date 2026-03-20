@@ -2369,3 +2369,15 @@ from functools import reduce
 numbers = [1, 2, 3, 4]
 product = reduce(lambda x, y: x * y, numbers)
 print(product) # 24 (1*2*3*4)
+
+
+from dataclasses import dataclass
+
+@dataclass
+class Product:
+    name: str
+    price: float
+    quantity: int = 0
+
+p1 = Product("Laptop", 1200.0, 5)
+print(p1) # Product(name='Laptop', price=1200.0, quantity=5)
