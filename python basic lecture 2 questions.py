@@ -2321,3 +2321,20 @@ async def fetch_data():
     print("Done!")
 
 asyncio.run(fetch_data())
+
+
+class Employee:
+    def __init__(self, salary):
+        self._salary = salary
+
+    @property
+    def salary(self):
+        return f"${self._salary:,}"
+
+    @salary.setter
+    def salary(self, value):
+        if value < 0: raise ValueError("Negative salary? No way.")
+        self._salary = value
+
+emp = Employee(50000)
+print(emp.salary) # $50,000
