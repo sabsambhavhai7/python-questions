@@ -2338,3 +2338,11 @@ class Employee:
 
 emp = Employee(50000)
 print(emp.salary) # $50,000
+
+
+import itertools
+
+letters = ['A', 'B', 'C']
+# Generates all possible pairs
+combos = list(itertools.combinations(letters, 2))
+print(combos) # [('A', 'B'), ('A', 'C'), ('B', 'C')]
