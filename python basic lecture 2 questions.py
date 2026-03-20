@@ -2293,3 +2293,14 @@ users = [
 # Sort by age
 sorted_users = sorted(users, key=lambda x: x['age'])
 print(sorted_users)
+
+
+class MyResource:
+    def __enter__(self):
+        print("Resource Acquired")
+        return self
+    def __exit__(self, exc_type, exc_value, traceback):
+        print("Resource Released")
+
+with MyResource():
+    print("Doing work...")
