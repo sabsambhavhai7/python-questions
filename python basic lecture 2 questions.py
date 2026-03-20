@@ -2304,3 +2304,10 @@ class MyResource:
 
 with MyResource():
     print("Doing work...")
+
+
+from collections import Counter
+
+words = ["apple", "banana", "apple", "cherry", "banana", "apple"]
+counts = Counter(words)
+print(counts.most_common(1))  # [('apple', 3)]
