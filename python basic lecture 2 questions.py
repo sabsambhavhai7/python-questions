@@ -2346,3 +2346,10 @@ letters = ['A', 'B', 'C']
 # Generates all possible pairs
 combos = list(itertools.combinations(letters, 2))
 print(combos) # [('A', 'B'), ('A', 'C'), ('B', 'C')]
+
+
+from collections import namedtuple
+
+Point = namedtuple('Point', ['x', 'y'])
+p = Point(10, 20)
+print(p.x, p.y) # Accessible by name or index
