@@ -2311,3 +2311,13 @@ from collections import Counter
 words = ["apple", "banana", "apple", "cherry", "banana", "apple"]
 counts = Counter(words)
 print(counts.most_common(1))  # [('apple', 3)]
+
+
+import asyncio
+
+async def fetch_data():
+    print("Start fetching...")
+    await asyncio.sleep(2) # Simulates an I/O task
+    print("Done!")
+
+asyncio.run(fetch_data())
