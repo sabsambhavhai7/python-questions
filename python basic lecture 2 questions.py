@@ -2353,3 +2353,7 @@ from collections import namedtuple
 Point = namedtuple('Point', ['x', 'y'])
 p = Point(10, 20)
 print(p.x, p.y) # Accessible by name or index
+
+
+def process_score(name: str, score: int) -> str:
+    return f"{name} scored {score} points."
