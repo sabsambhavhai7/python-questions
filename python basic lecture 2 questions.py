@@ -2357,3 +2357,8 @@ print(p.x, p.y) # Accessible by name or index
 
 def process_score(name: str, score: int) -> str:
     return f"{name} scored {score} points."
+
+
+nums = [1, 2, 3, 4, 5, 6]
+evens = list(filter(lambda x: x % 2 == 0, nums))
+doubled = list(map(lambda x: x * 2, nums))
