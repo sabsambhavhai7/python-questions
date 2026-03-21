@@ -2439,3 +2439,13 @@ Point = namedtuple('Point', ['x', 'y'])
 p = Point(10, 20)
 
 print(f"X: {p.x}, Y: {p.y}")
+
+scores = [80, 95, 40, 66]
+
+# Check if anyone failed (below 50)
+has_failure = any(s < 50 for s in scores) 
+
+# Check if everyone passed
+all_passed = all(s >= 50 for s in scores)
+
+print(f"Any failures? {has_failure}") # True
