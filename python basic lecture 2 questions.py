@@ -2373,6 +2373,18 @@ print(product) # 24 (1*2*3*4)
 
 from dataclasses import dataclass
 
+try:
+    num = int(input("Enter a divisor: "))
+    result = 100 / num
+except ValueError:
+    print("That's not a number!")
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+else:
+    print(f"Success! Result is {result}")
+finally:
+    print("Execution complete.")
+
 @dataclass
 class Product:
     name: str
