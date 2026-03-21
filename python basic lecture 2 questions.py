@@ -2387,3 +2387,13 @@ user_profile = {"username": "coder_123", "status": "active"}
 # If 'bio' isn't there, it returns "No bio provided" instead of crashing
 bio = user_profile.get("bio", "No bio provided")
 print(bio)
+
+
+import copy
+
+original = [[1, 2, 3], [4, 5, 6]]
+# A deep copy creates a completely independent version
+duplicate = copy.deepcopy(original)
+duplicate[0][0] = 99
+
+print(f"Original: {original[0][0]}") # Still 1
