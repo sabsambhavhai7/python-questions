@@ -2455,3 +2455,10 @@ import os
 # Set this in your terminal/system first!
 api_key = os.getenv("MY_API_KEY", "default_if_not_found")
 print(f"Using API Key: {api_key}")
+
+
+import itertools
+
+colors = itertools.cycle(['Red', 'Green', 'Blue'])
+for _ in range(5):
+    print(next(colors)) # Red, Green, Blue, Red, Green...
