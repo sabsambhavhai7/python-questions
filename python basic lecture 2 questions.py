@@ -2449,3 +2449,9 @@ has_failure = any(s < 50 for s in scores)
 all_passed = all(s >= 50 for s in scores)
 
 print(f"Any failures? {has_failure}") # True
+
+import os
+
+# Set this in your terminal/system first!
+api_key = os.getenv("MY_API_KEY", "default_if_not_found")
+print(f"Using API Key: {api_key}")
