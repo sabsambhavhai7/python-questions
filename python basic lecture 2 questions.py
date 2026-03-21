@@ -2409,3 +2409,10 @@ duplicate = copy.deepcopy(original)
 duplicate[0][0] = 99
 
 print(f"Original: {original[0][0]}") # Still 1
+
+
+import logging
+
+logging.basicConfig(level=logging.INFO, format='%(levelname)s - %(message)s')
+logging.info("This is an info message")
+logging.warning("Something might be wrong!")
