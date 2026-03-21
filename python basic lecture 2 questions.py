@@ -2381,3 +2381,9 @@ class Product:
 
 p1 = Product("Laptop", 1200.0, 5)
 print(p1) # Product(name='Laptop', price=1200.0, quantity=5)
+
+
+user_profile = {"username": "coder_123", "status": "active"}
+# If 'bio' isn't there, it returns "No bio provided" instead of crashing
+bio = user_profile.get("bio", "No bio provided")
+print(bio)
