@@ -2382,6 +2382,11 @@ except ZeroDivisionError:
     print("Cannot divide by zero!")
 else:
     print(f"Success! Result is {result}")
+
+def process_score(name: str, score: int) -> str:
+    return f"{name} scored {score}%"
+
+print(process_score("Alice", 95))
 finally:
     print("Execution complete.")
 
