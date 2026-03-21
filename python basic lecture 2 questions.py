@@ -2431,3 +2431,11 @@ evens = list(filter(lambda x: x % 2 == 0, numbers))
 scaled = list(map(lambda x: x * 10, numbers))
 
 print(f"Evens: {evens}, Scaled: {scaled}")
+
+
+from collections import namedtuple
+
+Point = namedtuple('Point', ['x', 'y'])
+p = Point(10, 20)
+
+print(f"X: {p.x}, Y: {p.y}")
