@@ -2421,3 +2421,13 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(levelname)s - %(message)s')
 logging.info("This is an info message")
 logging.warning("Something might be wrong!")
+
+numbers = [1, 2, 3, 4, 5, 6]
+
+# Filter: Only keep even numbers
+evens = list(filter(lambda x: x % 2 == 0, numbers))
+
+# Map: Multiply everything by 10
+scaled = list(map(lambda x: x * 10, numbers))
+
+print(f"Evens: {evens}, Scaled: {scaled}")
