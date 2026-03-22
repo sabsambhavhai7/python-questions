@@ -2481,3 +2481,15 @@ def factorial(n):
     return n * factorial(n - 1)
 
 print(factorial(5)) # 120
+
+
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+    
+    def __str__(self):
+        return f"{self.brand} {self.model}"
+
+my_car = Car("Tesla", "Model 3")
+print(my_car) # Tesla Model 3
