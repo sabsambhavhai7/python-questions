@@ -2542,3 +2542,11 @@ sizes = ["S", "M", "L"]
 
 combinations = list(itertools.product(colors, sizes))
 print(combinations[0]) # ('Red', 'S')
+
+
+from operator import add
+from stocks import prices # Example import
+
+# Instead of lambda x, y: x + y
+total = add(10, 20)
+print(total)
