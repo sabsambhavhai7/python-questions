@@ -2473,3 +2473,11 @@ for word in words:
     grouped[word[0]].append(word)
 
 print(dict(grouped)) # {'a': ['apple', 'apricot'], 'b': ['banana'], 'c': ['cherry']}
+
+"
+def factorial(n):
+    if n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(5)) # 120
