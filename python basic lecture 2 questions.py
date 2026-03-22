@@ -2493,3 +2493,13 @@ class Car:
 
 my_car = Car("Tesla", "Model 3")
 print(my_car) # Tesla Model 3
+
+
+users_a = {"Alice", "Bob", "Charlie"}
+users_b = {"Bob", "David", "Edward"}
+
+# Intersection (Who is in both?)
+print(users_a & users_b) # {'Bob'}
+
+# Difference (Who is only in A?)
+print(users_a - users_b) # {'Alice', 'Charlie'}
