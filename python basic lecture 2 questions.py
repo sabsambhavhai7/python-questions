@@ -2514,3 +2514,12 @@ print(users_a & users_b) # {'Bob'}
 
 # Difference (Who is only in A?)
 print(users_a - users_b) # {'Alice', 'Charlie'}
+
+
+import bisect
+
+scores = [60, 70, 80, 90]
+new_score = 75
+
+bisect.insort(scores, new_score)
+print(scores) # [60, 70, 75, 80, 90]
