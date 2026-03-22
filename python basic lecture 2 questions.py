@@ -2462,3 +2462,14 @@ import itertools
 colors = itertools.cycle(['Red', 'Green', 'Blue'])
 for _ in range(5):
     print(next(colors)) # Red, Green, Blue, Red, Green...
+
+from collections import defaultdict
+
+# Groups words by their starting letter
+words = ["apple", "banana", "apricot", "cherry"]
+grouped = defaultdict(list)
+
+for word in words:
+    grouped[word[0]].append(word)
+
+print(dict(grouped)) # {'a': ['apple', 'apricot'], 'b': ['banana'], 'c': ['cherry']}
