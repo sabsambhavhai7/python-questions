@@ -2533,3 +2533,12 @@ def add_item(item, box=None):
     return box
 
 print(add_item("Apple"))
+
+
+import itertools
+
+colors = ["Red", "Blue"]
+sizes = ["S", "M", "L"]
+
+combinations = list(itertools.product(colors, sizes))
+print(combinations[0]) # ('Red', 'S')
