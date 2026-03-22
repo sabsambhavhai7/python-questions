@@ -2550,3 +2550,12 @@ from stocks import prices # Example import
 # Instead of lambda x, y: x + y
 total = add(10, 20)
 print(total)
+
+
+import inspect
+
+def my_function(a, b=10):
+    pass
+
+# Get names of arguments
+print(inspect.signature(my_function)) # (a, b=10)
