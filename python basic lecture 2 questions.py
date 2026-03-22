@@ -2523,3 +2523,13 @@ new_score = 75
 
 bisect.insort(scores, new_score)
 print(scores) # [60, 70, 75, 80, 90]
+
+
+# The WRONG way: def add_item(item, box=[]):
+def add_item(item, box=None):
+    if box is None:
+        box = []
+    box.append(item)
+    return box
+
+print(add_item("Apple"))
