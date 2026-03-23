@@ -2585,3 +2585,8 @@ total = 0
 for x in data:
     total += x
 print(total / len(data))
+
+
+grades = {'Alice': 90, 'Bob': 80, 'Charlie': 85}
+avg = sum(grades.values()) / len(grades)
+print(avg)
