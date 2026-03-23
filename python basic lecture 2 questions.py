@@ -2605,3 +2605,9 @@ data = [80, 90]
 weights = [0.2, 0.8]
 weighted_avg = sum(d * w for d, w in zip(data, weights)) / sum(weights)
 print(weighted_avg)
+
+
+from functools import reduce
+data = [10, 20, 30, 40, 50]
+avg = reduce(lambda x, y: x + y, data) / len(data)
+print(avg)
