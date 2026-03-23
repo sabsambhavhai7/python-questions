@@ -2595,3 +2595,8 @@ print(avg)
 data = [0, 10, 20, 0, 30]
 filtered_data = [x for x in data if x > 0]
 print(sum(filtered_data) / len(filtered_data))
+
+data = [80, 90]
+weights = [0.2, 0.8]
+weighted_avg = sum(d * w for d, w in zip(data, weights)) / sum(weights)
+print(weighted_avg)
