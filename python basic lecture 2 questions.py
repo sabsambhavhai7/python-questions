@@ -2578,3 +2578,10 @@ print(statistics.fmean([10.5, 20.2, 30.8]))
 import pandas as pd
 df = pd.DataFrame({'scores': [80, 90, 100]})
 print(df['scores'].mean())
+
+
+data = [10, 20, 30, 40, 50]
+total = 0
+for x in data:
+    total += x
+print(total / len(data))
