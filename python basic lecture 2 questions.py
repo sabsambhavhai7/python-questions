@@ -2569,3 +2569,7 @@ print(average)
 import statistics
 data = [10, 20, 30, 40, 50]
 print(statistics.mean(data))
+
+
+import statistics
+print(statistics.fmean([10.5, 20.2, 30.8]))
