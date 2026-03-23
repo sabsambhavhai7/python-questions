@@ -2590,3 +2590,8 @@ print(total / len(data))
 grades = {'Alice': 90, 'Bob': 80, 'Charlie': 85}
 avg = sum(grades.values()) / len(grades)
 print(avg)
+
+
+data = [0, 10, 20, 0, 30]
+filtered_data = [x for x in data if x > 0]
+print(sum(filtered_data) / len(filtered_data))
