@@ -2573,3 +2573,8 @@ print(statistics.mean(data))
 
 import statistics
 print(statistics.fmean([10.5, 20.2, 30.8]))
+
+
+import pandas as pd
+df = pd.DataFrame({'scores': [80, 90, 100]})
+print(df['scores'].mean())
