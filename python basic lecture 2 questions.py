@@ -2559,3 +2559,8 @@ def my_function(a, b=10):
 
 # Get names of arguments
 print(inspect.signature(my_function)) # (a, b=10)
+
+
+data = [10, 20, 30, 40, 50]
+average = sum(data) / len(data)
+print(average)
