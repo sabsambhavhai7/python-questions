@@ -2600,3 +2600,8 @@ data = [80, 90]
 weights = [0.2, 0.8]
 weighted_avg = sum(d * w for d, w in zip(data, weights)) / sum(weights)
 print(weighted_avg)
+
+data = [80, 90]
+weights = [0.2, 0.8]
+weighted_avg = sum(d * w for d, w in zip(data, weights)) / sum(weights)
+print(weighted_avg)
