@@ -2681,3 +2681,20 @@ emails = ["user@gmail.com", "admin@company.com", "spam@junk.org", "info@company.
 # Keep only company emails
 company_emails = list(filter(lambda x: x.endswith("@company.com"), emails))
 print(company_emails)
+
+import time
+
+def timer_decorator(func):
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)
+        end = time.time()
+        print(f"Execution time: {end - start:.4f} seconds")
+        return result
+    return wrapper
+
+@timer_decorator
+def slow_task():
+    time.sleep(1.5)
+
+slow_task()
