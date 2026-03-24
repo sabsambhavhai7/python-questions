@@ -2675,3 +2675,9 @@ def fibonacci_gen(limit):
 
 for num in fibonacci_gen(100):
     print(num, end=" ")
+
+emails = ["user@gmail.com", "admin@company.com", "spam@junk.org", "info@company.com"]
+
+# Keep only company emails
+company_emails = list(filter(lambda x: x.endswith("@company.com"), emails))
+print(company_emails)
