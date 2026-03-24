@@ -2698,3 +2698,10 @@ def slow_task():
     time.sleep(1.5)
 
 slow_task()
+
+import re
+
+text = "Contact us at support@example.com or sales.dept@business.org"
+emails = re.findall(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', text)
+
+print(f"Found emails: {emails}")
