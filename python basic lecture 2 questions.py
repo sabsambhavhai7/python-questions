@@ -2626,3 +2626,16 @@ try:
         print(f"Processed {len(lines)} lines.")
 except FileNotFoundError:
     print("Error: The file 'data.txt' does not exist.")
+
+
+import requests
+
+def get_weather(city):
+    url = f"https://api.api-ninjas.com/v1/weather?city={city}"
+    response = requests.get(url, headers={'X-Api-Key': 'YOUR_API_KEY'})
+    
+    if response.status_code == 200:
+        data = response.json()
+        print(f"Temperature in {city}: {data['temp']}°C")
+    else:
+        print("Failed to retrieve data.")
