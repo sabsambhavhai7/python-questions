@@ -2618,3 +2618,11 @@ even_squares = {x: x**2 for x in numbers if x % 2 == 0}
 
 print(even_squares) 
 # Output: {2: 4, 4: 16, 6: 36, 8: 64, 10: 100}
+
+
+try:
+    with open("data.txt", "r") as file:
+        lines = [line.strip().upper() for line in file.readlines()]
+        print(f"Processed {len(lines)} lines.")
+except FileNotFoundError:
+    print("Error: The file 'data.txt' does not exist.")
