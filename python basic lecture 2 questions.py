@@ -2611,3 +2611,10 @@ from functools import reduce
 data = [10, 20, 30, 40, 50]
 avg = reduce(lambda x, y: x + y, data) / len(data)
 print(avg)
+
+# Create a dictionary of squares for even numbers only
+numbers = range(1, 11)
+even_squares = {x: x**2 for x in numbers if x % 2 == 0}
+
+print(even_squares) 
+# Output: {2: 4, 4: 16, 6: 36, 8: 64, 10: 100}
