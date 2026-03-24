@@ -2654,3 +2654,15 @@ try:
     new_balance = withdraw(50, 100)
 except InsufficientFundsError as e:
     print(e)
+
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    def apply_bonus(self, percentage):
+        self.salary += self.salary * (percentage / 100)
+        return f"{self.name}'s new salary is ${self.salary:.2f}"
+
+emp1 = Employee("Alice", 50000)
+print(emp1.apply_bonus(10))
