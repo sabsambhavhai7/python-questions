@@ -2639,3 +2639,18 @@ def get_weather(city):
         print(f"Temperature in {city}: {data['temp']}°C")
     else:
         print("Failed to retrieve data.")
+
+
+class InsufficientFundsError(Exception):
+    """Raised when a bank withdrawal exceeds the balance."""
+    pass
+
+def withdraw(balance, amount):
+    if amount > balance:
+        raise InsufficientFundsError(f"Balance is ${balance}, cannot withdraw ${amount}")
+    return balance - amount
+
+try:
+    new_balance = withdraw(50, 100)
+except InsufficientFundsError as e:
+    print(e)
