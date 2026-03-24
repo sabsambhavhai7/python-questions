@@ -2666,3 +2666,12 @@ class Employee:
 
 emp1 = Employee("Alice", 50000)
 print(emp1.apply_bonus(10))
+
+def fibonacci_gen(limit):
+    a, b = 0, 1
+    while a < limit:
+        yield a
+        a, b = b, a + b
+
+for num in fibonacci_gen(100):
+    print(num, end=" ")
