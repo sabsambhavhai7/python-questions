@@ -2742,3 +2742,13 @@ def heavy_computation():
     return sum(i**2 for i in range(10**6))
 
 heavy_computation()
+
+def infinite_sequence():
+    num = 0
+    while True:
+        yield num
+        num += 1
+
+gen = infinite_sequence()
+print(next(gen)) # 0
+print(next(gen)) # 1
