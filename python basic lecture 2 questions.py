@@ -2724,3 +2724,21 @@ t1.start()
 t2.start()
 t1.join()
 t2.join()
+
+
+import time
+
+def timer_decorator(func):
+    def wrapper(*args, **kwargs):
+        start = time.perf_counter()
+        result = func(*args, **kwargs)
+        end = time.perf_counter()
+        print(f"Executed {func.__name__} in {end - start:.4f}s")
+        return result
+    return wrapper
+
+@timer_decorator
+def heavy_computation():
+    return sum(i**2 for i in range(10**6))
+
+heavy_computation()
