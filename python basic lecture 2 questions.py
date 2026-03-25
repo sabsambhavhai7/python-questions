@@ -2752,3 +2752,18 @@ def infinite_sequence():
 gen = infinite_sequence()
 print(next(gen)) # 0
 print(next(gen)) # 1
+
+class ManagedFile:
+    def __init__(self, filename):
+        self.filename = filename
+
+    def __enter__(self):
+        self.file = open(self.filename, 'w')
+        return self.file
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        if self.file:
+            self.file.close()
+
+with ManagedFile('test.txt') as f:
+    f.write('Hello Advanced Python!')
