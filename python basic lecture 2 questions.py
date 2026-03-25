@@ -2813,3 +2813,9 @@ from collections import namedtuple
 Point = namedtuple('Point', ['x', 'y'])
 p = Point(10, 20)
 print(f"Coordinates: {p.x}, {p.y}")
+
+import itertools
+
+items = ['A', 'B', 'C']
+combinations = list(itertools.permutations(items, 2))
+print(combinations) # [('A', 'B'), ('A', 'C'), ('B', 'A'), ...]
