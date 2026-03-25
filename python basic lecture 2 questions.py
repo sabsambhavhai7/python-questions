@@ -2806,3 +2806,10 @@ thread = threading.Thread(target=print_numbers)
 thread.start()
 print("Main thread continues...")
 thread.join()
+
+
+from collections import namedtuple
+
+Point = namedtuple('Point', ['x', 'y'])
+p = Point(10, 20)
+print(f"Coordinates: {p.x}, {p.y}")
