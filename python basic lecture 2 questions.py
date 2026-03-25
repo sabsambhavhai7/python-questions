@@ -2795,3 +2795,14 @@ nums = [1, 2, 3, 4, 5, 6]
 # Filter even numbers and square them
 processed = list(map(lambda x: x**2, filter(lambda x: x % 2 == 0, nums)))
 print(processed) # [4, 16, 36]
+
+import threading
+
+def print_numbers():
+    for i in range(5):
+        print(f"Thread 1: {i}")
+
+thread = threading.Thread(target=print_numbers)
+thread.start()
+print("Main thread continues...")
+thread.join()
