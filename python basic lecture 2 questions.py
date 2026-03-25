@@ -2767,3 +2767,10 @@ class ManagedFile:
 
 with ManagedFile('test.txt') as f:
     f.write('Hello Advanced Python!')
+
+
+def master_function(*args, **kwargs):
+    print(f"Positional: {args}") # Tuple
+    print(f"Keyword: {kwargs}")   # Dictionary
+
+master_function(1, 2, 3, mode="admin", debug=True)
