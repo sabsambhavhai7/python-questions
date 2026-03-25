@@ -2789,3 +2789,9 @@ class Vector:
 v1 = Vector(2, 4)
 v2 = Vector(1, 3)
 print(v1 + v2) # Output: Vector(3, 7)
+
+
+nums = [1, 2, 3, 4, 5, 6]
+# Filter even numbers and square them
+processed = list(map(lambda x: x**2, filter(lambda x: x % 2 == 0, nums)))
+print(processed) # [4, 16, 36]
